@@ -1,0 +1,3841 @@
+
+/tmp/arduino_build_15857/zr7-taillight-attiny85.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+       0:	22 c0       	rjmp	.+68     	; 0x46 <__dtors_end>
+       2:	46 c0       	rjmp	.+140    	; 0x90 <__bad_interrupt>
+       4:	45 c0       	rjmp	.+138    	; 0x90 <__bad_interrupt>
+       6:	44 c0       	rjmp	.+136    	; 0x90 <__bad_interrupt>
+       8:	43 c0       	rjmp	.+134    	; 0x90 <__bad_interrupt>
+       a:	2b c4       	rjmp	.+2134   	; 0x862 <__vector_5>
+       c:	41 c0       	rjmp	.+130    	; 0x90 <__bad_interrupt>
+       e:	40 c0       	rjmp	.+128    	; 0x90 <__bad_interrupt>
+      10:	3f c0       	rjmp	.+126    	; 0x90 <__bad_interrupt>
+      12:	3e c0       	rjmp	.+124    	; 0x90 <__bad_interrupt>
+      14:	3d c0       	rjmp	.+122    	; 0x90 <__bad_interrupt>
+      16:	3c c0       	rjmp	.+120    	; 0x90 <__bad_interrupt>
+      18:	3b c0       	rjmp	.+118    	; 0x90 <__bad_interrupt>
+      1a:	3a c0       	rjmp	.+116    	; 0x90 <__bad_interrupt>
+      1c:	39 c0       	rjmp	.+114    	; 0x90 <__bad_interrupt>
+
+0000001e <__trampolines_end>:
+__trampolines_start():
+      1e:	00 00       	nop
+      20:	00 00       	nop
+      22:	37 00       	.word	0x0037	; ????
+
+00000024 <port_to_input_PGM>:
+      24:	00 00 00 00 36 00                                   ....6.
+
+0000002a <port_to_output_PGM>:
+      2a:	00 00 00 00 38 00                                   ....8.
+
+00000030 <digital_pin_to_port_PGM>:
+      30:	02 02 02 02 02 02                                   ......
+
+00000036 <digital_pin_to_bit_mask_PGM>:
+      36:	01 02 04 08 10 20                                   ..... 
+
+0000003c <digital_pin_to_timer_PGM>:
+      3c:	01 03 00 00 04 00                                   ......
+
+00000042 <__ctors_start>:
+__ctors_start():
+      42:	bb 06       	cpc	r11, r27
+
+00000044 <__ctors_end>:
+__dtors_start():
+      44:	c9 06       	cpc	r12, r25
+
+00000046 <__dtors_end>:
+__dtors_end():
+      46:	11 24       	eor	r1, r1
+      48:	1f be       	out	0x3f, r1	; 63
+      4a:	cf e5       	ldi	r28, 0x5F	; 95
+      4c:	d2 e0       	ldi	r29, 0x02	; 2
+      4e:	de bf       	out	0x3e, r29	; 62
+      50:	cd bf       	out	0x3d, r28	; 61
+
+00000052 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+      52:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+      54:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+      56:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+      58:	e6 e3       	ldi	r30, 0x36	; 54
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+      5a:	f1 e1       	ldi	r31, 0x11	; 17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+      5c:	02 c0       	rjmp	.+4      	; 0x62 <__do_copy_data+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+      5e:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+      60:	0d 92       	st	X+, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+      62:	a4 3c       	cpi	r26, 0xC4	; 196
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+      64:	b1 07       	cpc	r27, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+      66:	d9 f7       	brne	.-10     	; 0x5e <__do_copy_data+0xc>
+
+00000068 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+      68:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+      6a:	a4 ec       	ldi	r26, 0xC4	; 196
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+      6c:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+      6e:	01 c0       	rjmp	.+2      	; 0x72 <.do_clear_bss_start>
+
+00000070 <.do_clear_bss_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+      70:	1d 92       	st	X+, r1
+
+00000072 <.do_clear_bss_start>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+      72:	a2 31       	cpi	r26, 0x12	; 18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+      74:	b2 07       	cpc	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+      76:	e1 f7       	brne	.-8      	; 0x70 <.do_clear_bss_loop>
+
+00000078 <__do_global_ctors>:
+__do_global_ctors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2466
+      78:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2467
+      7a:	c2 e2       	ldi	r28, 0x22	; 34
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2468
+      7c:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2472
+      7e:	03 c0       	rjmp	.+6      	; 0x86 <__do_global_ctors+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2474
+      80:	21 97       	sbiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2480
+      82:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2481
+      84:	1a d7       	rcall	.+3636   	; 0xeba <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2483
+      86:	c1 32       	cpi	r28, 0x21	; 33
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2484
+      88:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2489
+      8a:	d1 f7       	brne	.-12     	; 0x80 <__do_global_ctors+0x8>
+      8c:	7c d4       	rcall	.+2296   	; 0x986 <main>
+      8e:	47 c8       	rjmp	.-3954   	; 0xfffff11e <__eeprom_end+0xff7ef11e>
+
+00000090 <__bad_interrupt>:
+__vector_1():
+      90:	b7 cf       	rjmp	.-146    	; 0x0 <__vectors>
+
+00000092 <micros>:
+micros():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:353
+
+    return m;
+  }
+
+  unsigned long micros()
+  {
+      92:	cf 92       	push	r12
+      94:	df 92       	push	r13
+      96:	ef 92       	push	r14
+      98:	ff 92       	push	r15
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:360
+    unsigned int r; // needed for some frequencies, optimized away otherwise
+    unsigned char f; // temporary storage for millis fraction counter
+    unsigned char q = 0; // record whether an overflow is flagged
+#endif
+    unsigned long m;
+    uint8_t t, oldSREG = SREG;
+      9a:	9f b7       	in	r25, 0x3f	; 63
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:362
+
+    cli();
+      9c:	f8 94       	cli
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:364
+#ifdef CORRECT_EXACT_MICROS
+    m = millis_timer_millis;
+      9e:	c0 90 c6 00 	lds	r12, 0x00C6	; 0x8000c6 <millis_timer_millis>
+      a2:	d0 90 c7 00 	lds	r13, 0x00C7	; 0x8000c7 <millis_timer_millis+0x1>
+      a6:	e0 90 c8 00 	lds	r14, 0x00C8	; 0x8000c8 <millis_timer_millis+0x2>
+      aa:	f0 90 c9 00 	lds	r15, 0x00C9	; 0x8000c9 <millis_timer_millis+0x3>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:365
+    f = millis_timer_fract;
+      ae:	30 91 c5 00 	lds	r19, 0x00C5	; 0x8000c5 <millis_timer_fract>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:370
+#else
+    m = millis_timer_overflow_count;
+#endif
+  #if defined(TCNT0) && (TIMER_TO_USE_FOR_MILLIS == 0) && !defined(TCW0)
+    t = TCNT0;
+      b2:	22 b7       	in	r18, 0x32	; 50
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:389
+      m++;
+    #else
+      q = 1;
+    #endif
+  #elif defined(TIFR) && (TIMER_TO_USE_FOR_MILLIS == 0)
+    if ((TIFR & _BV(TOV0)) && (t < 255))
+      b4:	88 b7       	in	r24, 0x38	; 56
+      b6:	48 2f       	mov	r20, r24
+      b8:	42 70       	andi	r20, 0x02	; 2
+      ba:	81 ff       	sbrs	r24, 1
+      bc:	04 c0       	rjmp	.+8      	; 0xc6 <micros+0x34>
+      be:	41 e0       	ldi	r20, 0x01	; 1
+      c0:	2f 3f       	cpi	r18, 0xFF	; 255
+      c2:	09 f4       	brne	.+2      	; 0xc6 <micros+0x34>
+      c4:	40 e0       	ldi	r20, 0x00	; 0
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:411
+    #else
+      q = 1;
+    #endif
+  #endif
+
+    SREG = oldSREG;
+      c6:	9f bf       	out	0x3f, r25	; 63
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:421
+       Basically we multiply by 1000 and add the scaled timer.
+
+       The leading part by m and f is long-term accurate.
+       For the timer we just need to be close from below.
+       Must never be too high, or micros jumps backwards. */
+    m = (((m << 7) - (m << 1) - m + f) << 3) + ((
+      c8:	c7 01       	movw	r24, r14
+      ca:	b6 01       	movw	r22, r12
+      cc:	57 e0       	ldi	r21, 0x07	; 7
+      ce:	66 0f       	add	r22, r22
+      d0:	77 1f       	adc	r23, r23
+      d2:	88 1f       	adc	r24, r24
+      d4:	99 1f       	adc	r25, r25
+      d6:	5a 95       	dec	r21
+      d8:	d1 f7       	brne	.-12     	; 0xce <micros+0x3c>
+      da:	63 0f       	add	r22, r19
+      dc:	71 1d       	adc	r23, r1
+      de:	81 1d       	adc	r24, r1
+      e0:	91 1d       	adc	r25, r1
+      e2:	6c 19       	sub	r22, r12
+      e4:	7d 09       	sbc	r23, r13
+      e6:	8e 09       	sbc	r24, r14
+      e8:	9f 09       	sbc	r25, r15
+      ea:	cc 0c       	add	r12, r12
+      ec:	dd 1c       	adc	r13, r13
+      ee:	ee 1c       	adc	r14, r14
+      f0:	ff 1c       	adc	r15, r15
+      f2:	6c 19       	sub	r22, r12
+      f4:	7d 09       	sbc	r23, r13
+      f6:	8e 09       	sbc	r24, r14
+      f8:	9f 09       	sbc	r25, r15
+      fa:	f3 e0       	ldi	r31, 0x03	; 3
+      fc:	66 0f       	add	r22, r22
+      fe:	77 1f       	adc	r23, r23
+     100:	88 1f       	adc	r24, r24
+     102:	99 1f       	adc	r25, r25
+     104:	fa 95       	dec	r31
+     106:	d1 f7       	brne	.-12     	; 0xfc <micros+0x6a>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:433
+    #elif F_CPU == 18432000L || F_CPU == 9216000L // 888, 444, etc.
+        ((unsigned int) t << 8) - ((unsigned int) t << 5) - ((unsigned int) t << 1)
+    #elif F_CPU == 18000000L // hand-tuned correction: 910
+        (r = ((unsigned int) t << 8) - ((unsigned int) t << 5), r + (r >> 6))
+    #elif F_CPU == 16500000L // hand-tuned correction: 992
+        ((unsigned int) t << 8) - ((unsigned int) t << 3)
+     108:	30 e0       	ldi	r19, 0x00	; 0
+     10a:	f2 2f       	mov	r31, r18
+     10c:	ee 27       	eor	r30, r30
+     10e:	b3 e0       	ldi	r27, 0x03	; 3
+     110:	22 0f       	add	r18, r18
+     112:	33 1f       	adc	r19, r19
+     114:	ba 95       	dec	r27
+     116:	e1 f7       	brne	.-8      	; 0x110 <micros+0x7e>
+     118:	df 01       	movw	r26, r30
+     11a:	a2 1b       	sub	r26, r18
+     11c:	b3 0b       	sbc	r27, r19
+     11e:	9d 01       	movw	r18, r26
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:446
+                     CORRECT_BIT3) << 1)
+                     CORRECT_BIT2) << 1)
+                     CORRECT_BIT1) << 1)
+                     CORRECT_BIT0)
+    #endif
+      ) >> (8 - CORRECT_BITS));
+     120:	56 e0       	ldi	r21, 0x06	; 6
+     122:	36 95       	lsr	r19
+     124:	27 95       	ror	r18
+     126:	5a 95       	dec	r21
+     128:	e1 f7       	brne	.-8      	; 0x122 <micros+0x90>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:421
+       Basically we multiply by 1000 and add the scaled timer.
+
+       The leading part by m and f is long-term accurate.
+       For the timer we just need to be close from below.
+       Must never be too high, or micros jumps backwards. */
+    m = (((m << 7) - (m << 1) - m + f) << 3) + ((
+     12a:	62 0f       	add	r22, r18
+     12c:	73 1f       	adc	r23, r19
+     12e:	81 1d       	adc	r24, r1
+     130:	91 1d       	adc	r25, r1
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:447
+                     CORRECT_BIT2) << 1)
+                     CORRECT_BIT1) << 1)
+                     CORRECT_BIT0)
+    #endif
+      ) >> (8 - CORRECT_BITS));
+    return q ? m + MICROSECONDS_PER_MILLIS_OVERFLOW : m;
+     132:	44 23       	and	r20, r20
+     134:	21 f0       	breq	.+8      	; 0x13e <micros+0xac>
+     136:	60 52       	subi	r22, 0x20	; 32
+     138:	7c 4f       	sbci	r23, 0xFC	; 252
+     13a:	8f 4f       	sbci	r24, 0xFF	; 255
+     13c:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:508
+      //return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + ((t+(((m<<8)%clockCyclesPerMicrosecond())) * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond()));
+      return ((m << 8 )/clockCyclesPerMicrosecond()* MillisTimer_Prescale_Value) + (t * MillisTimer_Prescale_Value / clockCyclesPerMicrosecond());
+    #endif
+  #endif
+  #endif // !CORRECT_EXACT_MICROS
+  }
+     13e:	ff 90       	pop	r15
+     140:	ef 90       	pop	r14
+     142:	df 90       	pop	r13
+     144:	cf 90       	pop	r12
+     146:	08 95       	ret
+
+00000148 <Adafruit_NeoPixel::show() [clone .part.2]>:
+_ZN17Adafruit_NeoPixel4showEv.part.2():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:258
+           function is called (about 30 microseconds per RGB pixel, 40 for
+           RGBW pixels). There's no easy fix for this, but a few
+           specialized alternative or companion libraries exist that use
+           very device-specific peripherals to work around it.
+*/
+void Adafruit_NeoPixel::show(void) {
+     148:	cf 92       	push	r12
+     14a:	df 92       	push	r13
+     14c:	ef 92       	push	r14
+     14e:	ff 92       	push	r15
+     150:	0f 93       	push	r16
+     152:	1f 93       	push	r17
+     154:	cf 93       	push	r28
+     156:	df 93       	push	r29
+     158:	00 d0       	rcall	.+0      	; 0x15a <Adafruit_NeoPixel::show() [clone .part.2]+0x12>
+     15a:	00 d0       	rcall	.+0      	; 0x15c <Adafruit_NeoPixel::show() [clone .part.2]+0x14>
+     15c:	00 d0       	rcall	.+0      	; 0x15e <Adafruit_NeoPixel::show() [clone .part.2]+0x16>
+     15e:	1f 92       	push	r1
+     160:	cd b7       	in	r28, 0x3d	; 61
+     162:	de b7       	in	r29, 0x3e	; 62
+     164:	8c 01       	movw	r16, r24
+_ZN17Adafruit_NeoPixel7canShowEv.isra.0():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:264
+    // show() call happens precisely around the rollover, but that's
+    // neither likely nor especially harmful, vs. other code that might
+    // stall for 30+ minutes, or having to document and frequently remind
+    // and/or provide tech support explaining an unintuitive need for
+    // show() calls at least once an hour.
+    uint32_t now = micros();
+     166:	95 df       	rcall	.-214    	; 0x92 <micros>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:265
+    if (endTime > now) {
+     168:	d8 01       	movw	r26, r16
+     16a:	1e 96       	adiw	r26, 0x0e	; 14
+     16c:	cd 90       	ld	r12, X+
+     16e:	dd 90       	ld	r13, X+
+     170:	ed 90       	ld	r14, X+
+     172:	fc 90       	ld	r15, X
+     174:	51 97       	sbiw	r26, 0x11	; 17
+     176:	6c 15       	cp	r22, r12
+     178:	7d 05       	cpc	r23, r13
+     17a:	8e 05       	cpc	r24, r14
+     17c:	9f 05       	cpc	r25, r15
+     17e:	28 f4       	brcc	.+10     	; 0x18a <Adafruit_NeoPixel::show() [clone .part.2]+0x42>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:266
+      endTime = now;
+     180:	f8 01       	movw	r30, r16
+     182:	66 87       	std	Z+14, r22	; 0x0e
+     184:	77 87       	std	Z+15, r23	; 0x0f
+     186:	80 8b       	std	Z+16, r24	; 0x10
+     188:	91 8b       	std	Z+17, r25	; 0x11
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:268
+    }
+    return (now - endTime) >= 300L;
+     18a:	d8 01       	movw	r26, r16
+     18c:	1e 96       	adiw	r26, 0x0e	; 14
+     18e:	cd 90       	ld	r12, X+
+     190:	dd 90       	ld	r13, X+
+     192:	ed 90       	ld	r14, X+
+     194:	fc 90       	ld	r15, X
+     196:	51 97       	sbiw	r26, 0x11	; 17
+     198:	6c 19       	sub	r22, r12
+     19a:	7d 09       	sbc	r23, r13
+     19c:	8e 09       	sbc	r24, r14
+     19e:	9f 09       	sbc	r25, r15
+_ZN17Adafruit_NeoPixel4showEv.part.2():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:269
+  // put a delay at the end of the function, the ending time is noted and
+  // the function will simply hold off (if needed) on issuing the
+  // subsequent round of data until the latch time has elapsed. This
+  // allows the mainline code to start generating the next frame of data
+  // rather than stalling for the latch.
+  while (!canShow())
+     1a0:	6c 32       	cpi	r22, 0x2C	; 44
+     1a2:	71 40       	sbci	r23, 0x01	; 1
+     1a4:	81 05       	cpc	r24, r1
+     1a6:	91 05       	cpc	r25, r1
+     1a8:	f0 f2       	brcs	.-68     	; 0x166 <Adafruit_NeoPixel::show() [clone .part.2]+0x1e>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:288
+    // to the PORT register as needed.
+
+    // NRF52 may use PWM + DMA (if available), may not need to disable interrupt
+    // ESP32 may not disable interrupts because espShow() uses RMT which tries to acquire locks
+#if !(defined(NRF52) || defined(NRF52_SERIES) || defined(ESP32))
+  noInterrupts(); // Need 100% focus on instruction timing
+     1aa:	f8 94       	cli
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:294
+#endif
+
+#if defined(__AVR__)
+  // AVR MCUs -- ATmega & ATtiny (no XMEGA) ---------------------------------
+
+  volatile uint16_t i = numBytes; // Loop counter
+     1ac:	f8 01       	movw	r30, r16
+     1ae:	83 81       	ldd	r24, Z+3	; 0x03
+     1b0:	94 81       	ldd	r25, Z+4	; 0x04
+     1b2:	9a 83       	std	Y+2, r25	; 0x02
+     1b4:	89 83       	std	Y+1, r24	; 0x01
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:295
+  volatile uint8_t *ptr = pixels, // Pointer to next byte
+     1b6:	00 84       	ldd	r0, Z+8	; 0x08
+     1b8:	f1 85       	ldd	r31, Z+9	; 0x09
+     1ba:	e0 2d       	mov	r30, r0
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:296
+      b = *ptr++,                 // Current byte value
+     1bc:	7f 01       	movw	r14, r30
+     1be:	2f ef       	ldi	r18, 0xFF	; 255
+     1c0:	e2 1a       	sub	r14, r18
+     1c2:	f2 0a       	sbc	r15, r18
+     1c4:	80 81       	ld	r24, Z
+     1c6:	8b 83       	std	Y+3, r24	; 0x03
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:1527
+    // 20 inst. clocks per bit: HHHHHxxxxxxxxLLLLLLL
+    // ST instructions:         ^   ^        ^       (T=0,5,13)
+
+    volatile uint8_t next, bit;
+
+    hi = *port | pinMask;
+     1c8:	d8 01       	movw	r26, r16
+     1ca:	52 96       	adiw	r26, 0x12	; 18
+     1cc:	ed 91       	ld	r30, X+
+     1ce:	fc 91       	ld	r31, X
+     1d0:	53 97       	sbiw	r26, 0x13	; 19
+     1d2:	90 81       	ld	r25, Z
+     1d4:	54 96       	adiw	r26, 0x14	; 20
+     1d6:	8c 91       	ld	r24, X
+     1d8:	98 2b       	or	r25, r24
+     1da:	9c 83       	std	Y+4, r25	; 0x04
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:1528
+    lo = *port & ~pinMask;
+     1dc:	90 81       	ld	r25, Z
+     1de:	80 95       	com	r24
+     1e0:	89 23       	and	r24, r25
+     1e2:	8d 83       	std	Y+5, r24	; 0x05
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:1529
+    next = lo;
+     1e4:	8d 81       	ldd	r24, Y+5	; 0x05
+     1e6:	8e 83       	std	Y+6, r24	; 0x06
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:1530
+    bit = 8;
+     1e8:	88 e0       	ldi	r24, 0x08	; 8
+     1ea:	8f 83       	std	Y+7, r24	; 0x07
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:1578
+                 "\n\t" // 2    i--           (T = 18)
+                 "brne head20"
+                 "\n" // 2    if(i != 0) -> (next byte)
+                 : [port] "+e"(port), [byte] "+r"(b), [bit] "+r"(bit),
+                   [next] "+r"(next), [count] "+w"(i)
+                 : [ptr] "e"(ptr), [hi] "r"(hi), [lo] "r"(lo));
+     1ec:	5c 81       	ldd	r21, Y+4	; 0x04
+     1ee:	6d 81       	ldd	r22, Y+5	; 0x05
+     1f0:	4b 81       	ldd	r20, Y+3	; 0x03
+     1f2:	3f 81       	ldd	r19, Y+7	; 0x07
+     1f4:	2e 81       	ldd	r18, Y+6	; 0x06
+     1f6:	89 81       	ldd	r24, Y+1	; 0x01
+     1f8:	9a 81       	ldd	r25, Y+2	; 0x02
+     1fa:	d7 01       	movw	r26, r14
+
+000001fc <head20>:
+     1fc:	50 83       	st	Z, r21
+     1fe:	47 fd       	sbrc	r20, 7
+     200:	25 2f       	mov	r18, r21
+     202:	3a 95       	dec	r19
+     204:	20 83       	st	Z, r18
+     206:	26 2f       	mov	r18, r22
+     208:	39 f0       	breq	.+14     	; 0x218 <nextbyte20>
+     20a:	44 1f       	adc	r20, r20
+     20c:	00 c0       	rjmp	.+0      	; 0x20e <head20+0x12>
+     20e:	00 00       	nop
+     210:	60 83       	st	Z, r22
+     212:	00 00       	nop
+     214:	00 c0       	rjmp	.+0      	; 0x216 <head20+0x1a>
+     216:	f2 cf       	rjmp	.-28     	; 0x1fc <head20>
+
+00000218 <nextbyte20>:
+     218:	38 e0       	ldi	r19, 0x08	; 8
+     21a:	4d 91       	ld	r20, X+
+     21c:	60 83       	st	Z, r22
+     21e:	00 00       	nop
+     220:	01 97       	sbiw	r24, 0x01	; 1
+     222:	61 f7       	brne	.-40     	; 0x1fc <head20>
+     224:	d8 01       	movw	r26, r16
+     226:	53 96       	adiw	r26, 0x13	; 19
+     228:	fc 93       	st	X, r31
+     22a:	ee 93       	st	-X, r30
+     22c:	52 97       	sbiw	r26, 0x12	; 18
+     22e:	4b 83       	std	Y+3, r20	; 0x03
+     230:	3f 83       	std	Y+7, r19	; 0x07
+     232:	2e 83       	std	Y+6, r18	; 0x06
+     234:	9a 83       	std	Y+2, r25	; 0x02
+     236:	89 83       	std	Y+1, r24	; 0x01
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3118
+#endif
+
+  // END ARCHITECTURE SELECT ------------------------------------------------
+
+#if !(defined(NRF52) || defined(NRF52_SERIES) || defined(ESP32))
+  interrupts();
+     238:	78 94       	sei
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3121
+#endif
+
+  endTime = micros(); // Save EOD time for latch on next call
+     23a:	2b df       	rcall	.-426    	; 0x92 <micros>
+     23c:	f8 01       	movw	r30, r16
+     23e:	66 87       	std	Z+14, r22	; 0x0e
+     240:	77 87       	std	Z+15, r23	; 0x0f
+     242:	80 8b       	std	Z+16, r24	; 0x10
+     244:	91 8b       	std	Z+17, r25	; 0x11
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3122
+}
+     246:	27 96       	adiw	r28, 0x07	; 7
+     248:	0f b6       	in	r0, 0x3f	; 63
+     24a:	f8 94       	cli
+     24c:	de bf       	out	0x3e, r29	; 62
+     24e:	0f be       	out	0x3f, r0	; 63
+     250:	cd bf       	out	0x3d, r28	; 61
+     252:	df 91       	pop	r29
+     254:	cf 91       	pop	r28
+     256:	1f 91       	pop	r17
+     258:	0f 91       	pop	r16
+     25a:	ff 90       	pop	r15
+     25c:	ef 90       	pop	r14
+     25e:	df 90       	pop	r13
+     260:	cf 90       	pop	r12
+     262:	08 95       	ret
+
+00000264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>:
+_ZN17Adafruit_NeoPixel13setPixelColorEjm():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3217
+  @param   n  Pixel index, starting from 0.
+  @param   c  32-bit color value. Most significant byte is white (for RGBW
+              pixels) or ignored (for RGB pixels), next is red, then green,
+              and least significant byte is blue.
+*/
+void Adafruit_NeoPixel::setPixelColor(uint16_t n, uint32_t c) {
+     264:	8f 92       	push	r8
+     266:	9f 92       	push	r9
+     268:	af 92       	push	r10
+     26a:	bf 92       	push	r11
+     26c:	cf 92       	push	r12
+     26e:	df 92       	push	r13
+     270:	ef 92       	push	r14
+     272:	ff 92       	push	r15
+     274:	0f 93       	push	r16
+     276:	1f 93       	push	r17
+     278:	cf 93       	push	r28
+     27a:	df 93       	push	r29
+     27c:	fc 01       	movw	r30, r24
+     27e:	eb 01       	movw	r28, r22
+     280:	89 01       	movw	r16, r18
+     282:	9a 01       	movw	r18, r20
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3218
+  if (n < numLEDs) {
+     284:	81 81       	ldd	r24, Z+1	; 0x01
+     286:	92 81       	ldd	r25, Z+2	; 0x02
+     288:	68 17       	cp	r22, r24
+     28a:	79 07       	cpc	r23, r25
+     28c:	c0 f5       	brcc	.+112    	; 0x2fe <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)+0x9a>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3219
+    uint8_t *p, r = (uint8_t)(c >> 16), g = (uint8_t)(c >> 8), b = (uint8_t)c;
+     28e:	a9 01       	movw	r20, r18
+     290:	66 27       	eor	r22, r22
+     292:	77 27       	eor	r23, r23
+     294:	e4 2e       	mov	r14, r20
+     296:	81 2e       	mov	r8, r17
+     298:	92 2e       	mov	r9, r18
+     29a:	a3 2e       	mov	r10, r19
+     29c:	bb 24       	eor	r11, r11
+     29e:	f8 2c       	mov	r15, r8
+     2a0:	d0 2e       	mov	r13, r16
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3220
+    if (brightness) { // See notes in setBrightness()
+     2a2:	c7 80       	ldd	r12, Z+7	; 0x07
+     2a4:	cc 20       	and	r12, r12
+     2a6:	89 f0       	breq	.+34     	; 0x2ca <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)+0x66>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3221
+      r = (r * brightness) >> 8;
+     2a8:	ac 2d       	mov	r26, r12
+     2aa:	b0 e0       	ldi	r27, 0x00	; 0
+     2ac:	84 2f       	mov	r24, r20
+     2ae:	90 e0       	ldi	r25, 0x00	; 0
+     2b0:	bd 01       	movw	r22, r26
+     2b2:	8a d5       	rcall	.+2836   	; 0xdc8 <__mulhi3>
+     2b4:	e9 2e       	mov	r14, r25
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3222
+      g = (g * brightness) >> 8;
+     2b6:	88 2d       	mov	r24, r8
+     2b8:	90 e0       	ldi	r25, 0x00	; 0
+     2ba:	bd 01       	movw	r22, r26
+     2bc:	85 d5       	rcall	.+2826   	; 0xdc8 <__mulhi3>
+     2be:	f9 2e       	mov	r15, r25
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3223
+      b = (b * brightness) >> 8;
+     2c0:	80 2f       	mov	r24, r16
+     2c2:	90 e0       	ldi	r25, 0x00	; 0
+     2c4:	bd 01       	movw	r22, r26
+     2c6:	80 d5       	rcall	.+2816   	; 0xdc8 <__mulhi3>
+     2c8:	d9 2e       	mov	r13, r25
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3225
+    }
+    if (wOffset == rOffset) {
+     2ca:	45 85       	ldd	r20, Z+13	; 0x0d
+     2cc:	a0 85       	ldd	r26, Z+8	; 0x08
+     2ce:	b1 85       	ldd	r27, Z+9	; 0x09
+     2d0:	82 85       	ldd	r24, Z+10	; 0x0a
+     2d2:	48 13       	cpse	r20, r24
+     2d4:	21 c0       	rjmp	.+66     	; 0x318 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)+0xb4>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3226
+      p = &pixels[n * 3];
+     2d6:	ce 01       	movw	r24, r28
+     2d8:	63 e0       	ldi	r22, 0x03	; 3
+     2da:	70 e0       	ldi	r23, 0x00	; 0
+     2dc:	75 d5       	rcall	.+2794   	; 0xdc8 <__mulhi3>
+     2de:	a8 0f       	add	r26, r24
+     2e0:	b9 1f       	adc	r27, r25
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3232
+    } else {
+      p = &pixels[n * 4];
+      uint8_t w = (uint8_t)(c >> 24);
+      p[wOffset] = brightness ? ((w * brightness) >> 8) : w;
+    }
+    p[rOffset] = r;
+     2e2:	c2 85       	ldd	r28, Z+10	; 0x0a
+     2e4:	ca 0f       	add	r28, r26
+     2e6:	db 2f       	mov	r29, r27
+     2e8:	d1 1d       	adc	r29, r1
+     2ea:	e8 82       	st	Y, r14
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3233
+    p[gOffset] = g;
+     2ec:	c3 85       	ldd	r28, Z+11	; 0x0b
+     2ee:	ca 0f       	add	r28, r26
+     2f0:	db 2f       	mov	r29, r27
+     2f2:	d1 1d       	adc	r29, r1
+     2f4:	f8 82       	st	Y, r15
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3234
+    p[bOffset] = b;
+     2f6:	84 85       	ldd	r24, Z+12	; 0x0c
+     2f8:	a8 0f       	add	r26, r24
+     2fa:	b1 1d       	adc	r27, r1
+     2fc:	dc 92       	st	X, r13
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3236
+  }
+}
+     2fe:	df 91       	pop	r29
+     300:	cf 91       	pop	r28
+     302:	1f 91       	pop	r17
+     304:	0f 91       	pop	r16
+     306:	ff 90       	pop	r15
+     308:	ef 90       	pop	r14
+     30a:	df 90       	pop	r13
+     30c:	cf 90       	pop	r12
+     30e:	bf 90       	pop	r11
+     310:	af 90       	pop	r10
+     312:	9f 90       	pop	r9
+     314:	8f 90       	pop	r8
+     316:	08 95       	ret
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3228
+      b = (b * brightness) >> 8;
+    }
+    if (wOffset == rOffset) {
+      p = &pixels[n * 3];
+    } else {
+      p = &pixels[n * 4];
+     318:	cc 0f       	add	r28, r28
+     31a:	dd 1f       	adc	r29, r29
+     31c:	cc 0f       	add	r28, r28
+     31e:	dd 1f       	adc	r29, r29
+     320:	ac 0f       	add	r26, r28
+     322:	bd 1f       	adc	r27, r29
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3229
+      uint8_t w = (uint8_t)(c >> 24);
+     324:	03 2f       	mov	r16, r19
+     326:	11 27       	eor	r17, r17
+     328:	22 27       	eor	r18, r18
+     32a:	33 27       	eor	r19, r19
+     32c:	90 2f       	mov	r25, r16
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3230
+      p[wOffset] = brightness ? ((w * brightness) >> 8) : w;
+     32e:	cc 20       	and	r12, r12
+     330:	21 f0       	breq	.+8      	; 0x33a <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)+0xd6>
+     332:	8c 2d       	mov	r24, r12
+     334:	90 e0       	ldi	r25, 0x00	; 0
+     336:	b8 01       	movw	r22, r16
+     338:	47 d5       	rcall	.+2702   	; 0xdc8 <__mulhi3>
+     33a:	ed 01       	movw	r28, r26
+     33c:	c4 0f       	add	r28, r20
+     33e:	d1 1d       	adc	r29, r1
+     340:	98 83       	st	Y, r25
+     342:	cf cf       	rjmp	.-98     	; 0x2e2 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)+0x7e>
+
+00000344 <animRingsIdle(unsigned int)>:
+_Z13animRingsIdlej():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:387
+    }
+  }
+}
+
+// ---------------- RING ANIMATIONS ----------------
+void animRingsIdle(uint16_t animTick) {
+     344:	cf 92       	push	r12
+     346:	df 92       	push	r13
+     348:	ef 92       	push	r14
+     34a:	ff 92       	push	r15
+     34c:	cf 93       	push	r28
+     34e:	df 93       	push	r29
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:388
+  uint16_t idle_t = animTick % IDLE_PERIOD_TICKS;
+     350:	28 ec       	ldi	r18, 0xC8	; 200
+     352:	30 e0       	ldi	r19, 0x00	; 0
+     354:	b9 01       	movw	r22, r18
+     356:	7b d5       	rcall	.+2806   	; 0xe4e <__udivmodhi4>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:392
+
+  uint8_t idle_wave =
+    (idle_t < IDLE_PERIOD_TICKS / 2)
+      ? (uint32_t)idle_t * (IDLE_SPAN * 2) / IDLE_PERIOD_TICKS
+     358:	bc 01       	movw	r22, r24
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:390
+
+// ---------------- RING ANIMATIONS ----------------
+void animRingsIdle(uint16_t animTick) {
+  uint16_t idle_t = animTick % IDLE_PERIOD_TICKS;
+
+  uint8_t idle_wave =
+     35a:	84 36       	cpi	r24, 0x64	; 100
+     35c:	91 05       	cpc	r25, r1
+     35e:	18 f0       	brcs	.+6      	; 0x366 <animRingsIdle(unsigned int)+0x22>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:393
+    (idle_t < IDLE_PERIOD_TICKS / 2)
+      ? (uint32_t)idle_t * (IDLE_SPAN * 2) / IDLE_PERIOD_TICKS
+      : (uint32_t)(IDLE_PERIOD_TICKS - idle_t) * (IDLE_SPAN * 2) / IDLE_PERIOD_TICKS;
+     360:	28 1b       	sub	r18, r24
+     362:	39 0b       	sbc	r19, r25
+     364:	b9 01       	movw	r22, r18
+     366:	90 e0       	ldi	r25, 0x00	; 0
+     368:	80 e0       	ldi	r24, 0x00	; 0
+     36a:	26 e7       	ldi	r18, 0x76	; 118
+     36c:	30 e0       	ldi	r19, 0x00	; 0
+     36e:	40 e0       	ldi	r20, 0x00	; 0
+     370:	50 e0       	ldi	r21, 0x00	; 0
+     372:	3b d5       	rcall	.+2678   	; 0xdea <__mulsi3>
+     374:	28 ec       	ldi	r18, 0xC8	; 200
+     376:	30 e0       	ldi	r19, 0x00	; 0
+     378:	40 e0       	ldi	r20, 0x00	; 0
+     37a:	50 e0       	ldi	r21, 0x00	; 0
+     37c:	7c d5       	rcall	.+2808   	; 0xe76 <__udivmodsi4>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:395
+
+  uint8_t idle_val = IDLE_MIN_BRIGHTNESS + idle_wave;
+     37e:	2b 5f       	subi	r18, 0xFB	; 251
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:396
+  uint32_t colour = rings.Color(idle_val, (idle_val / 10) + 1, 0);
+     380:	82 2f       	mov	r24, r18
+     382:	6a e0       	ldi	r22, 0x0A	; 10
+     384:	4b d5       	rcall	.+2710   	; 0xe1c <__udivmodqi4>
+     386:	8f 5f       	subi	r24, 0xFF	; 255
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+             variable for later use or passed to the setPixelColor()
+             function. Packed RGB format is predictable, regardless of
+             LED strand color order.
+  */
+  static uint32_t Color(uint8_t r, uint8_t g, uint8_t b) {
+    return ((uint32_t)r << 16) | ((uint32_t)g << 8) | b;
+     388:	c2 2e       	mov	r12, r18
+     38a:	d1 2c       	mov	r13, r1
+     38c:	f1 2c       	mov	r15, r1
+     38e:	e1 2c       	mov	r14, r1
+     390:	76 01       	movw	r14, r12
+     392:	dd 24       	eor	r13, r13
+     394:	cc 24       	eor	r12, r12
+     396:	d8 2a       	or	r13, r24
+     398:	cc e2       	ldi	r28, 0x2C	; 44
+     39a:	d0 e0       	ldi	r29, 0x00	; 0
+_Z13animRingsIdlej():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:399
+
+  for (uint8_t i = 0; i < RING_LEDS; i++)
+    rings.setPixelColor(ringIndex(i, RING_CW), colour);
+     39c:	a7 01       	movw	r20, r14
+     39e:	96 01       	movw	r18, r12
+     3a0:	be 01       	movw	r22, r28
+     3a2:	83 ee       	ldi	r24, 0xE3	; 227
+     3a4:	90 e0       	ldi	r25, 0x00	; 0
+     3a6:	5e df       	rcall	.-324    	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     3a8:	21 97       	sbiw	r28, 0x01	; 1
+     3aa:	c0 f7       	brcc	.-16     	; 0x39c <animRingsIdle(unsigned int)+0x58>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:398
+      : (uint32_t)(IDLE_PERIOD_TICKS - idle_t) * (IDLE_SPAN * 2) / IDLE_PERIOD_TICKS;
+
+  uint8_t idle_val = IDLE_MIN_BRIGHTNESS + idle_wave;
+  uint32_t colour = rings.Color(idle_val, (idle_val / 10) + 1, 0);
+
+  for (uint8_t i = 0; i < RING_LEDS; i++)
+     3ac:	c3 e2       	ldi	r28, 0x23	; 35
+     3ae:	d0 e0       	ldi	r29, 0x00	; 0
+fillRings():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:223
+  if (start > end) return;
+
+  uint32_t colour = rings.Color(r, g, b);
+
+  for (uint8_t i = start; i <= end; i++) {
+    rings.setPixelColor(i, colour);
+     3b0:	20 e4       	ldi	r18, 0x40	; 64
+     3b2:	30 e0       	ldi	r19, 0x00	; 0
+     3b4:	40 e0       	ldi	r20, 0x00	; 0
+     3b6:	50 e0       	ldi	r21, 0x00	; 0
+     3b8:	be 01       	movw	r22, r28
+     3ba:	83 ee       	ldi	r24, 0xE3	; 227
+     3bc:	90 e0       	ldi	r25, 0x00	; 0
+     3be:	52 df       	rcall	.-348    	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     3c0:	21 96       	adiw	r28, 0x01	; 1
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:222
+  if (end   >= RING_LEDS) end = RING_LEDS - 1;
+  if (start > end) return;
+
+  uint32_t colour = rings.Color(r, g, b);
+
+  for (uint8_t i = start; i <= end; i++) {
+     3c2:	cd 32       	cpi	r28, 0x2D	; 45
+     3c4:	d1 05       	cpc	r29, r1
+     3c6:	a1 f7       	brne	.-24     	; 0x3b0 <animRingsIdle(unsigned int)+0x6c>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:226
+    rings.setPixelColor(i, colour);
+  }
+
+  ringsDirty = true;
+     3c8:	81 e0       	ldi	r24, 0x01	; 1
+     3ca:	80 93 f8 00 	sts	0x00F8, r24	; 0x8000f8 <ringsDirty>
+_Z13animRingsIdlej():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:405
+    //rings.setPixelColor(i, colour);
+
+  fillRings(0, 0, IDLE_MAX_BRIGHTNESS, 35, 44);
+
+  ringsDirty = true;
+}
+     3ce:	df 91       	pop	r29
+     3d0:	cf 91       	pop	r28
+     3d2:	ff 90       	pop	r15
+     3d4:	ef 90       	pop	r14
+     3d6:	df 90       	pop	r13
+     3d8:	cf 90       	pop	r12
+     3da:	08 95       	ret
+
+000003dc <renderPlateTrailEx(PlateTrailProfile const&)>:
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:287
+    else if (platePos >= PLATE_LEDS)
+      platePos = 0;
+  }
+}
+
+static inline void renderPlateTrailEx(const PlateTrailProfile& profile) {
+     3dc:	4f 92       	push	r4
+     3de:	5f 92       	push	r5
+     3e0:	6f 92       	push	r6
+     3e2:	7f 92       	push	r7
+     3e4:	af 92       	push	r10
+     3e6:	bf 92       	push	r11
+     3e8:	cf 92       	push	r12
+     3ea:	df 92       	push	r13
+     3ec:	ef 92       	push	r14
+     3ee:	ff 92       	push	r15
+     3f0:	0f 93       	push	r16
+     3f2:	1f 93       	push	r17
+     3f4:	cf 93       	push	r28
+     3f6:	df 93       	push	r29
+     3f8:	00 d0       	rcall	.+0      	; 0x3fa <renderPlateTrailEx(PlateTrailProfile const&)+0x1e>
+     3fa:	00 d0       	rcall	.+0      	; 0x3fc <renderPlateTrailEx(PlateTrailProfile const&)+0x20>
+     3fc:	00 d0       	rcall	.+0      	; 0x3fe <renderPlateTrailEx(PlateTrailProfile const&)+0x22>
+     3fe:	cd b7       	in	r28, 0x3d	; 61
+     400:	de b7       	in	r29, 0x3e	; 62
+     402:	9a 83       	std	Y+2, r25	; 0x02
+     404:	89 83       	std	Y+1, r24	; 0x01
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:288
+  if ((animTick % PLATE_STOP_DIV) != 0) return;
+     406:	80 91 fd 00 	lds	r24, 0x00FD	; 0x8000fd <animTick>
+     40a:	90 91 fe 00 	lds	r25, 0x00FE	; 0x8000fe <animTick+0x1>
+     40e:	6a e0       	ldi	r22, 0x0A	; 10
+     410:	70 e0       	ldi	r23, 0x00	; 0
+     412:	1d d5       	rcall	.+2618   	; 0xe4e <__udivmodhi4>
+     414:	89 2b       	or	r24, r25
+     416:	09 f0       	breq	.+2      	; 0x41a <__LOCK_REGION_LENGTH__+0x1a>
+     418:	55 c1       	rjmp	.+682    	; 0x6c4 <__LOCK_REGION_LENGTH__+0x2c4>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:290
+
+  if (!profile.bounce)
+     41a:	e9 81       	ldd	r30, Y+1	; 0x01
+     41c:	fa 81       	ldd	r31, Y+2	; 0x02
+     41e:	81 81       	ldd	r24, Z+1	; 0x01
+     420:	81 11       	cpse	r24, r1
+     422:	06 c0       	rjmp	.+12     	; 0x430 <__LOCK_REGION_LENGTH__+0x30>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:291
+    plateDir = (profile.dir == 0) ? +1 : profile.dir;
+     424:	80 81       	ld	r24, Z
+     426:	81 11       	cpse	r24, r1
+     428:	01 c0       	rjmp	.+2      	; 0x42c <__LOCK_REGION_LENGTH__+0x2c>
+     42a:	81 e0       	ldi	r24, 0x01	; 1
+     42c:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+     430:	e9 81       	ldd	r30, Y+1	; 0x01
+     432:	fa 81       	ldd	r31, Y+2	; 0x02
+     434:	fe 83       	std	Y+6, r31	; 0x06
+     436:	ed 83       	std	Y+5, r30	; 0x05
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     438:	85 81       	ldd	r24, Z+5	; 0x05
+     43a:	c6 80       	ldd	r12, Z+6	; 0x06
+     43c:	d1 2c       	mov	r13, r1
+     43e:	f1 2c       	mov	r15, r1
+     440:	e1 2c       	mov	r14, r1
+     442:	fe 2c       	mov	r15, r14
+     444:	ed 2c       	mov	r14, r13
+     446:	dc 2c       	mov	r13, r12
+     448:	cc 24       	eor	r12, r12
+     44a:	e8 2a       	or	r14, r24
+     44c:	87 81       	ldd	r24, Z+7	; 0x07
+     44e:	c8 2a       	or	r12, r24
+     450:	10 e0       	ldi	r17, 0x00	; 0
+     452:	00 e0       	ldi	r16, 0x00	; 0
+fillPlate():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:234
+
+void fillPlate(uint8_t r, uint8_t g, uint8_t b) {
+  uint32_t colour = plate.Color(r, g, b);
+  
+  for (uint8_t i = 0; i < PLATE_LEDS; i++) {
+    plate.setPixelColor(i, colour);
+     454:	a7 01       	movw	r20, r14
+     456:	96 01       	movw	r18, r12
+     458:	b8 01       	movw	r22, r16
+     45a:	8d ec       	ldi	r24, 0xCD	; 205
+     45c:	90 e0       	ldi	r25, 0x00	; 0
+     45e:	02 df       	rcall	.-508    	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     460:	0f 5f       	subi	r16, 0xFF	; 255
+     462:	1f 4f       	sbci	r17, 0xFF	; 255
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:233
+
+
+void fillPlate(uint8_t r, uint8_t g, uint8_t b) {
+  uint32_t colour = plate.Color(r, g, b);
+  
+  for (uint8_t i = 0; i < PLATE_LEDS; i++) {
+     464:	0a 30       	cpi	r16, 0x0A	; 10
+     466:	11 05       	cpc	r17, r1
+     468:	a9 f7       	brne	.-22     	; 0x454 <__LOCK_REGION_LENGTH__+0x54>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:237
+    plate.setPixelColor(i, colour);
+  }
+
+  plateDirty = true;
+     46a:	91 e0       	ldi	r25, 0x01	; 1
+     46c:	90 93 e2 00 	sts	0x00E2, r25	; 0x8000e2 <plateDirty>
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:295
+  if (!profile.bounce)
+    plateDir = (profile.dir == 0) ? +1 : profile.dir;
+
+  fillPlate(profile.fill_r, profile.fill_g, profile.fill_b);
+
+  advancePlatePos(profile.bounce);
+     470:	ad 81       	ldd	r26, Y+5	; 0x05
+     472:	be 81       	ldd	r27, Y+6	; 0x06
+     474:	11 96       	adiw	r26, 0x01	; 1
+     476:	2c 91       	ld	r18, X
+advancePlatePos():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:269
+static inline void fadePlate(uint8_t decay) { // to black
+  fadePlateTo(0, 0, 0, decay);
+}
+
+static inline void advancePlatePos(bool bounce) {
+  platePos += plateDir;
+     478:	80 91 ff 00 	lds	r24, 0x00FF	; 0x8000ff <platePos>
+     47c:	30 91 60 00 	lds	r19, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+     480:	83 0f       	add	r24, r19
+     482:	80 93 ff 00 	sts	0x00FF, r24	; 0x8000ff <platePos>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:271
+
+  if (bounce) {
+     486:	22 23       	and	r18, r18
+     488:	09 f4       	brne	.+2      	; 0x48c <__LOCK_REGION_LENGTH__+0x8c>
+     48a:	76 c0       	rjmp	.+236    	; 0x578 <__LOCK_REGION_LENGTH__+0x178>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:272
+    if (platePos <= 0) {
+     48c:	18 16       	cp	r1, r24
+     48e:	0c f4       	brge	.+2      	; 0x492 <__LOCK_REGION_LENGTH__+0x92>
+     490:	69 c0       	rjmp	.+210    	; 0x564 <__LOCK_REGION_LENGTH__+0x164>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:273
+      platePos = 0;
+     492:	10 92 ff 00 	sts	0x00FF, r1	; 0x8000ff <platePos>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:274
+      plateDir = +1;
+     496:	90 93 60 00 	sts	0x0060, r25	; 0x800060 <__DATA_REGION_ORIGIN__>
+     49a:	80 91 ff 00 	lds	r24, 0x00FF	; 0x8000ff <platePos>
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:298
+  fillPlate(profile.fill_r, profile.fill_g, profile.fill_b);
+
+  advancePlatePos(profile.bounce);
+
+  // -------- NORMAL SWEEP (dir != 0) --------
+  if (profile.dir != 0) {
+     49e:	ed 81       	ldd	r30, Y+5	; 0x05
+     4a0:	fe 81       	ldd	r31, Y+6	; 0x06
+     4a2:	90 81       	ld	r25, Z
+     4a4:	99 23       	and	r25, r25
+     4a6:	09 f4       	brne	.+2      	; 0x4aa <__LOCK_REGION_LENGTH__+0xaa>
+     4a8:	73 c0       	rjmp	.+230    	; 0x590 <__LOCK_REGION_LENGTH__+0x190>
+     4aa:	f1 2c       	mov	r15, r1
+     4ac:	e1 2c       	mov	r14, r1
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:300
+    for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+      int16_t p = platePos - (plateDir * i);
+     4ae:	08 2f       	mov	r16, r24
+     4b0:	88 0f       	add	r24, r24
+     4b2:	11 0b       	sbc	r17, r17
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:307
+
+      uint8_t v = 255 - (i * (255 / PLATE_TRAIL_LEN));
+      plate.setPixelColor(
+        p,
+        plate.Color(
+          (uint16_t)profile.r * v / 255,
+     4b4:	cc 24       	eor	r12, r12
+     4b6:	ca 94       	dec	r12
+     4b8:	d1 2c       	mov	r13, r1
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:300
+  advancePlatePos(profile.bounce);
+
+  // -------- NORMAL SWEEP (dir != 0) --------
+  if (profile.dir != 0) {
+    for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+      int16_t p = platePos - (plateDir * i);
+     4ba:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+     4be:	08 2e       	mov	r0, r24
+     4c0:	00 0c       	add	r0, r0
+     4c2:	99 0b       	sbc	r25, r25
+     4c4:	b7 01       	movw	r22, r14
+     4c6:	80 d4       	rcall	.+2304   	; 0xdc8 <__mulhi3>
+     4c8:	58 01       	movw	r10, r16
+     4ca:	a8 1a       	sub	r10, r24
+     4cc:	b9 0a       	sbc	r11, r25
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:301
+      if (p < 0 || p >= PLATE_LEDS) break;
+     4ce:	fa e0       	ldi	r31, 0x0A	; 10
+     4d0:	af 16       	cp	r10, r31
+     4d2:	b1 04       	cpc	r11, r1
+     4d4:	08 f0       	brcs	.+2      	; 0x4d8 <__LOCK_REGION_LENGTH__+0xd8>
+     4d6:	f3 c0       	rjmp	.+486    	; 0x6be <__LOCK_REGION_LENGTH__+0x2be>
+     4d8:	c7 01       	movw	r24, r14
+     4da:	61 e8       	ldi	r22, 0x81	; 129
+     4dc:	7f ef       	ldi	r23, 0xFF	; 255
+     4de:	74 d4       	rcall	.+2280   	; 0xdc8 <__mulhi3>
+     4e0:	fc 01       	movw	r30, r24
+     4e2:	e1 50       	subi	r30, 0x01	; 1
+     4e4:	ff 4f       	sbci	r31, 0xFF	; 255
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:307
+
+      uint8_t v = 255 - (i * (255 / PLATE_TRAIL_LEN));
+      plate.setPixelColor(
+        p,
+        plate.Color(
+          (uint16_t)profile.r * v / 255,
+     4e6:	ad 81       	ldd	r26, Y+5	; 0x05
+     4e8:	be 81       	ldd	r27, Y+6	; 0x06
+     4ea:	12 96       	adiw	r26, 0x02	; 2
+     4ec:	8c 91       	ld	r24, X
+     4ee:	90 e0       	ldi	r25, 0x00	; 0
+     4f0:	bf 01       	movw	r22, r30
+     4f2:	6a d4       	rcall	.+2260   	; 0xdc8 <__mulhi3>
+     4f4:	b6 01       	movw	r22, r12
+     4f6:	ab d4       	rcall	.+2390   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     4f8:	2b 01       	movw	r4, r22
+     4fa:	71 2c       	mov	r7, r1
+     4fc:	61 2c       	mov	r6, r1
+     4fe:	32 01       	movw	r6, r4
+     500:	55 24       	eor	r5, r5
+     502:	44 24       	eor	r4, r4
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:308
+          (uint16_t)profile.g * v / 255,
+     504:	ad 81       	ldd	r26, Y+5	; 0x05
+     506:	be 81       	ldd	r27, Y+6	; 0x06
+     508:	13 96       	adiw	r26, 0x03	; 3
+     50a:	8c 91       	ld	r24, X
+     50c:	90 e0       	ldi	r25, 0x00	; 0
+     50e:	bf 01       	movw	r22, r30
+     510:	5b d4       	rcall	.+2230   	; 0xdc8 <__mulhi3>
+     512:	b6 01       	movw	r22, r12
+     514:	9c d4       	rcall	.+2360   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     516:	9b 01       	movw	r18, r22
+     518:	50 e0       	ldi	r21, 0x00	; 0
+     51a:	40 e0       	ldi	r20, 0x00	; 0
+     51c:	54 2f       	mov	r21, r20
+     51e:	43 2f       	mov	r20, r19
+     520:	32 2f       	mov	r19, r18
+     522:	22 27       	eor	r18, r18
+     524:	42 2a       	or	r4, r18
+     526:	53 2a       	or	r5, r19
+     528:	64 2a       	or	r6, r20
+     52a:	75 2a       	or	r7, r21
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:309
+          (uint16_t)profile.b * v / 255
+     52c:	ad 81       	ldd	r26, Y+5	; 0x05
+     52e:	be 81       	ldd	r27, Y+6	; 0x06
+     530:	14 96       	adiw	r26, 0x04	; 4
+     532:	8c 91       	ld	r24, X
+     534:	90 e0       	ldi	r25, 0x00	; 0
+     536:	bf 01       	movw	r22, r30
+     538:	47 d4       	rcall	.+2190   	; 0xdc8 <__mulhi3>
+     53a:	b6 01       	movw	r22, r12
+     53c:	88 d4       	rcall	.+2320   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     53e:	9b 01       	movw	r18, r22
+     540:	50 e0       	ldi	r21, 0x00	; 0
+     542:	40 e0       	ldi	r20, 0x00	; 0
+     544:	24 29       	or	r18, r4
+     546:	35 29       	or	r19, r5
+     548:	46 29       	or	r20, r6
+     54a:	57 29       	or	r21, r7
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:304
+    for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+      int16_t p = platePos - (plateDir * i);
+      if (p < 0 || p >= PLATE_LEDS) break;
+
+      uint8_t v = 255 - (i * (255 / PLATE_TRAIL_LEN));
+      plate.setPixelColor(
+     54c:	b5 01       	movw	r22, r10
+     54e:	8d ec       	ldi	r24, 0xCD	; 205
+     550:	90 e0       	ldi	r25, 0x00	; 0
+     552:	88 de       	rcall	.-752    	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:299
+
+  advancePlatePos(profile.bounce);
+
+  // -------- NORMAL SWEEP (dir != 0) --------
+  if (profile.dir != 0) {
+    for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+     554:	ea 94       	dec	r14
+     556:	ef 28       	or	r14, r15
+     558:	09 f4       	brne	.+2      	; 0x55c <__LOCK_REGION_LENGTH__+0x15c>
+     55a:	b1 c0       	rjmp	.+354    	; 0x6be <__LOCK_REGION_LENGTH__+0x2be>
+     55c:	ee 24       	eor	r14, r14
+     55e:	e3 94       	inc	r14
+     560:	f1 2c       	mov	r15, r1
+     562:	ab cf       	rjmp	.-170    	; 0x4ba <__LOCK_REGION_LENGTH__+0xba>
+advancePlatePos():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:275
+
+  if (bounce) {
+    if (platePos <= 0) {
+      platePos = 0;
+      plateDir = +1;
+    } else if (platePos >= PLATE_LEDS - 1) {
+     564:	89 30       	cpi	r24, 0x09	; 9
+     566:	0c f4       	brge	.+2      	; 0x56a <__LOCK_REGION_LENGTH__+0x16a>
+     568:	98 cf       	rjmp	.-208    	; 0x49a <__LOCK_REGION_LENGTH__+0x9a>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:276
+      platePos = PLATE_LEDS - 1;
+     56a:	89 e0       	ldi	r24, 0x09	; 9
+     56c:	80 93 ff 00 	sts	0x00FF, r24	; 0x8000ff <platePos>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:277
+      plateDir = -1;
+     570:	8f ef       	ldi	r24, 0xFF	; 255
+     572:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+     576:	91 cf       	rjmp	.-222    	; 0x49a <__LOCK_REGION_LENGTH__+0x9a>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:280
+    }
+  } else {
+    if (platePos < 0)
+     578:	87 ff       	sbrs	r24, 7
+     57a:	04 c0       	rjmp	.+8      	; 0x584 <__LOCK_REGION_LENGTH__+0x184>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:281
+      platePos = PLATE_LEDS - 1;
+     57c:	89 e0       	ldi	r24, 0x09	; 9
+     57e:	80 93 ff 00 	sts	0x00FF, r24	; 0x8000ff <platePos>
+     582:	8b cf       	rjmp	.-234    	; 0x49a <__LOCK_REGION_LENGTH__+0x9a>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:282
+    else if (platePos >= PLATE_LEDS)
+     584:	8a 30       	cpi	r24, 0x0A	; 10
+     586:	0c f4       	brge	.+2      	; 0x58a <__LOCK_REGION_LENGTH__+0x18a>
+     588:	88 cf       	rjmp	.-240    	; 0x49a <__LOCK_REGION_LENGTH__+0x9a>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:283
+      platePos = 0;
+     58a:	10 92 ff 00 	sts	0x00FF, r1	; 0x8000ff <platePos>
+     58e:	85 cf       	rjmp	.-246    	; 0x49a <__LOCK_REGION_LENGTH__+0x9a>
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:320
+  // -------- DOUBLE SWEEP (dir == 0) --------
+  else {
+    const uint8_t half = PLATE_LEDS / 2;
+
+    // abstract position inside half-domain
+    uint8_t pos = platePos % half;
+     590:	65 e0       	ldi	r22, 0x05	; 5
+     592:	50 d4       	rcall	.+2208   	; 0xe34 <__divmodqi4>
+     594:	a9 2e       	mov	r10, r25
+     596:	b1 2c       	mov	r11, r1
+     598:	44 e0       	ldi	r20, 0x04	; 4
+     59a:	e4 2e       	mov	r14, r20
+     59c:	e9 1a       	sub	r14, r25
+     59e:	f1 2c       	mov	r15, r1
+     5a0:	0f ef       	ldi	r16, 0xFF	; 255
+     5a2:	10 e0       	ldi	r17, 0x00	; 0
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:335
+
+      if (left < PLATE_LEDS)
+        plate.setPixelColor(
+          left,
+          plate.Color(
+            (uint16_t)profile.r * v / 255,
+     5a4:	cc 24       	eor	r12, r12
+     5a6:	ca 94       	dec	r12
+     5a8:	d1 2c       	mov	r13, r1
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:324
+    // abstract position inside half-domain
+    uint8_t pos = platePos % half;
+
+    for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+      int16_t p = pos - i;
+      if (p < 0) break;
+     5aa:	ef ef       	ldi	r30, 0xFF	; 255
+     5ac:	ae 16       	cp	r10, r30
+     5ae:	be 06       	cpc	r11, r30
+     5b0:	09 f4       	brne	.+2      	; 0x5b4 <__LOCK_REGION_LENGTH__+0x1b4>
+     5b2:	85 c0       	rjmp	.+266    	; 0x6be <__LOCK_REGION_LENGTH__+0x2be>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:335
+
+      if (left < PLATE_LEDS)
+        plate.setPixelColor(
+          left,
+          plate.Color(
+            (uint16_t)profile.r * v / 255,
+     5b4:	ad 81       	ldd	r26, Y+5	; 0x05
+     5b6:	be 81       	ldd	r27, Y+6	; 0x06
+     5b8:	12 96       	adiw	r26, 0x02	; 2
+     5ba:	8c 91       	ld	r24, X
+     5bc:	90 e0       	ldi	r25, 0x00	; 0
+     5be:	b8 01       	movw	r22, r16
+     5c0:	03 d4       	rcall	.+2054   	; 0xdc8 <__mulhi3>
+     5c2:	b6 01       	movw	r22, r12
+     5c4:	44 d4       	rcall	.+2184   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     5c6:	2b 01       	movw	r4, r22
+     5c8:	71 2c       	mov	r7, r1
+     5ca:	61 2c       	mov	r6, r1
+     5cc:	d2 01       	movw	r26, r4
+     5ce:	99 27       	eor	r25, r25
+     5d0:	88 27       	eor	r24, r24
+     5d2:	89 83       	std	Y+1, r24	; 0x01
+     5d4:	9a 83       	std	Y+2, r25	; 0x02
+     5d6:	ab 83       	std	Y+3, r26	; 0x03
+     5d8:	bc 83       	std	Y+4, r27	; 0x04
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:336
+            (uint16_t)profile.g * v / 255,
+     5da:	ad 81       	ldd	r26, Y+5	; 0x05
+     5dc:	be 81       	ldd	r27, Y+6	; 0x06
+     5de:	13 96       	adiw	r26, 0x03	; 3
+     5e0:	8c 91       	ld	r24, X
+     5e2:	90 e0       	ldi	r25, 0x00	; 0
+     5e4:	b8 01       	movw	r22, r16
+     5e6:	f0 d3       	rcall	.+2016   	; 0xdc8 <__mulhi3>
+     5e8:	b6 01       	movw	r22, r12
+     5ea:	31 d4       	rcall	.+2146   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     5ec:	2b 01       	movw	r4, r22
+     5ee:	71 2c       	mov	r7, r1
+     5f0:	61 2c       	mov	r6, r1
+     5f2:	76 2c       	mov	r7, r6
+     5f4:	65 2c       	mov	r6, r5
+     5f6:	54 2c       	mov	r5, r4
+     5f8:	44 24       	eor	r4, r4
+     5fa:	89 81       	ldd	r24, Y+1	; 0x01
+     5fc:	9a 81       	ldd	r25, Y+2	; 0x02
+     5fe:	ab 81       	ldd	r26, Y+3	; 0x03
+     600:	bc 81       	ldd	r27, Y+4	; 0x04
+     602:	48 2a       	or	r4, r24
+     604:	59 2a       	or	r5, r25
+     606:	6a 2a       	or	r6, r26
+     608:	7b 2a       	or	r7, r27
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:337
+            (uint16_t)profile.b * v / 255
+     60a:	ad 81       	ldd	r26, Y+5	; 0x05
+     60c:	be 81       	ldd	r27, Y+6	; 0x06
+     60e:	14 96       	adiw	r26, 0x04	; 4
+     610:	8c 91       	ld	r24, X
+     612:	90 e0       	ldi	r25, 0x00	; 0
+     614:	b8 01       	movw	r22, r16
+     616:	d8 d3       	rcall	.+1968   	; 0xdc8 <__mulhi3>
+     618:	b6 01       	movw	r22, r12
+     61a:	19 d4       	rcall	.+2098   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     61c:	9b 01       	movw	r18, r22
+     61e:	50 e0       	ldi	r21, 0x00	; 0
+     620:	40 e0       	ldi	r20, 0x00	; 0
+     622:	24 29       	or	r18, r4
+     624:	35 29       	or	r19, r5
+     626:	46 29       	or	r20, r6
+     628:	57 29       	or	r21, r7
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:332
+
+      uint8_t left  = (half - 1) - p;
+      uint8_t right = half + p;
+
+      if (left < PLATE_LEDS)
+        plate.setPixelColor(
+     62a:	b7 01       	movw	r22, r14
+     62c:	8d ec       	ldi	r24, 0xCD	; 205
+     62e:	90 e0       	ldi	r25, 0x00	; 0
+     630:	19 de       	rcall	.-974    	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:345
+
+      if (right < PLATE_LEDS)
+        plate.setPixelColor(
+          right,
+          plate.Color(
+            (uint16_t)profile.r * v / 255,
+     632:	ed 81       	ldd	r30, Y+5	; 0x05
+     634:	fe 81       	ldd	r31, Y+6	; 0x06
+     636:	82 81       	ldd	r24, Z+2	; 0x02
+     638:	90 e0       	ldi	r25, 0x00	; 0
+     63a:	b8 01       	movw	r22, r16
+     63c:	c5 d3       	rcall	.+1930   	; 0xdc8 <__mulhi3>
+     63e:	b6 01       	movw	r22, r12
+     640:	06 d4       	rcall	.+2060   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     642:	2b 01       	movw	r4, r22
+     644:	71 2c       	mov	r7, r1
+     646:	61 2c       	mov	r6, r1
+     648:	d2 01       	movw	r26, r4
+     64a:	99 27       	eor	r25, r25
+     64c:	88 27       	eor	r24, r24
+     64e:	89 83       	std	Y+1, r24	; 0x01
+     650:	9a 83       	std	Y+2, r25	; 0x02
+     652:	ab 83       	std	Y+3, r26	; 0x03
+     654:	bc 83       	std	Y+4, r27	; 0x04
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:346
+            (uint16_t)profile.g * v / 255,
+     656:	83 81       	ldd	r24, Z+3	; 0x03
+     658:	90 e0       	ldi	r25, 0x00	; 0
+     65a:	b8 01       	movw	r22, r16
+     65c:	b5 d3       	rcall	.+1898   	; 0xdc8 <__mulhi3>
+     65e:	b6 01       	movw	r22, r12
+     660:	f6 d3       	rcall	.+2028   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     662:	2b 01       	movw	r4, r22
+     664:	71 2c       	mov	r7, r1
+     666:	61 2c       	mov	r6, r1
+     668:	76 2c       	mov	r7, r6
+     66a:	65 2c       	mov	r6, r5
+     66c:	54 2c       	mov	r5, r4
+     66e:	44 24       	eor	r4, r4
+     670:	89 81       	ldd	r24, Y+1	; 0x01
+     672:	9a 81       	ldd	r25, Y+2	; 0x02
+     674:	ab 81       	ldd	r26, Y+3	; 0x03
+     676:	bc 81       	ldd	r27, Y+4	; 0x04
+     678:	48 2a       	or	r4, r24
+     67a:	59 2a       	or	r5, r25
+     67c:	6a 2a       	or	r6, r26
+     67e:	7b 2a       	or	r7, r27
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:347
+            (uint16_t)profile.b * v / 255
+     680:	84 81       	ldd	r24, Z+4	; 0x04
+     682:	90 e0       	ldi	r25, 0x00	; 0
+     684:	b8 01       	movw	r22, r16
+     686:	a0 d3       	rcall	.+1856   	; 0xdc8 <__mulhi3>
+     688:	b6 01       	movw	r22, r12
+     68a:	e1 d3       	rcall	.+1986   	; 0xe4e <__udivmodhi4>
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     68c:	9b 01       	movw	r18, r22
+     68e:	50 e0       	ldi	r21, 0x00	; 0
+     690:	40 e0       	ldi	r20, 0x00	; 0
+     692:	24 29       	or	r18, r4
+     694:	35 29       	or	r19, r5
+     696:	46 29       	or	r20, r6
+     698:	57 29       	or	r21, r7
+_ZL18renderPlateTrailExRK17PlateTrailProfile():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:342
+            (uint16_t)profile.b * v / 255
+          )
+        );
+
+      if (right < PLATE_LEDS)
+        plate.setPixelColor(
+     69a:	65 e0       	ldi	r22, 0x05	; 5
+     69c:	6a 0d       	add	r22, r10
+     69e:	70 e0       	ldi	r23, 0x00	; 0
+     6a0:	8d ec       	ldi	r24, 0xCD	; 205
+     6a2:	90 e0       	ldi	r25, 0x00	; 0
+     6a4:	df dd       	rcall	.-1090   	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     6a6:	91 e0       	ldi	r25, 0x01	; 1
+     6a8:	a9 1a       	sub	r10, r25
+     6aa:	b1 08       	sbc	r11, r1
+     6ac:	0f 57       	subi	r16, 0x7F	; 127
+     6ae:	11 09       	sbc	r17, r1
+     6b0:	af ef       	ldi	r26, 0xFF	; 255
+     6b2:	ea 1a       	sub	r14, r26
+     6b4:	fa 0a       	sbc	r15, r26
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:322
+    const uint8_t half = PLATE_LEDS / 2;
+
+    // abstract position inside half-domain
+    uint8_t pos = platePos % half;
+
+    for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+     6b6:	01 30       	cpi	r16, 0x01	; 1
+     6b8:	11 05       	cpc	r17, r1
+     6ba:	09 f0       	breq	.+2      	; 0x6be <__LOCK_REGION_LENGTH__+0x2be>
+     6bc:	76 cf       	rjmp	.-276    	; 0x5aa <__LOCK_REGION_LENGTH__+0x1aa>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:353
+          )
+        );
+    }
+  }
+
+  plateDirty = true;
+     6be:	81 e0       	ldi	r24, 0x01	; 1
+     6c0:	80 93 e2 00 	sts	0x00E2, r24	; 0x8000e2 <plateDirty>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:354
+}
+     6c4:	26 96       	adiw	r28, 0x06	; 6
+     6c6:	0f b6       	in	r0, 0x3f	; 63
+     6c8:	f8 94       	cli
+     6ca:	de bf       	out	0x3e, r29	; 62
+     6cc:	0f be       	out	0x3f, r0	; 63
+     6ce:	cd bf       	out	0x3d, r28	; 61
+     6d0:	df 91       	pop	r29
+     6d2:	cf 91       	pop	r28
+     6d4:	1f 91       	pop	r17
+     6d6:	0f 91       	pop	r16
+     6d8:	ff 90       	pop	r15
+     6da:	ef 90       	pop	r14
+     6dc:	df 90       	pop	r13
+     6de:	cf 90       	pop	r12
+     6e0:	bf 90       	pop	r11
+     6e2:	af 90       	pop	r10
+     6e4:	7f 90       	pop	r7
+     6e6:	6f 90       	pop	r6
+     6e8:	5f 90       	pop	r5
+     6ea:	4f 90       	pop	r4
+     6ec:	08 95       	ret
+
+000006ee <digitalWrite.constprop.4>:
+digitalWrite.constprop.4():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:138
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+     6ee:	87 ff       	sbrs	r24, 7
+     6f0:	09 c0       	rjmp	.+18     	; 0x704 <digitalWrite.constprop.4+0x16>
+     6f2:	8f 77       	andi	r24, 0x7F	; 127
+     6f4:	69 f1       	breq	.+90     	; 0x750 <digitalWrite.constprop.4+0x62>
+     6f6:	81 30       	cpi	r24, 0x01	; 1
+     6f8:	69 f1       	breq	.+90     	; 0x754 <digitalWrite.constprop.4+0x66>
+     6fa:	82 30       	cpi	r24, 0x02	; 2
+     6fc:	69 f1       	breq	.+90     	; 0x758 <digitalWrite.constprop.4+0x6a>
+     6fe:	83 30       	cpi	r24, 0x03	; 3
+     700:	69 f1       	breq	.+90     	; 0x75c <digitalWrite.constprop.4+0x6e>
+     702:	8f ef       	ldi	r24, 0xFF	; 255
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:139
+  uint8_t timer = digitalPinToTimer(pin);
+     704:	90 e0       	ldi	r25, 0x00	; 0
+     706:	fc 01       	movw	r30, r24
+     708:	e4 5c       	subi	r30, 0xC4	; 196
+     70a:	ff 4f       	sbci	r31, 0xFF	; 255
+     70c:	34 91       	lpm	r19, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:140
+  uint8_t bit = digitalPinToBitMask(pin);
+     70e:	fc 01       	movw	r30, r24
+     710:	ea 5c       	subi	r30, 0xCA	; 202
+     712:	ff 4f       	sbci	r31, 0xFF	; 255
+     714:	24 91       	lpm	r18, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:141
+  uint8_t port = digitalPinToPort(pin);
+     716:	fc 01       	movw	r30, r24
+     718:	e0 5d       	subi	r30, 0xD0	; 208
+     71a:	ff 4f       	sbci	r31, 0xFF	; 255
+     71c:	e4 91       	lpm	r30, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:144
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+     71e:	ee 23       	and	r30, r30
+     720:	b1 f0       	breq	.+44     	; 0x74e <digitalWrite.constprop.4+0x60>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:148
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+     722:	33 23       	and	r19, r19
+     724:	29 f0       	breq	.+10     	; 0x730 <digitalWrite.constprop.4+0x42>
+turnOffPWM():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:67
+}
+
+static void turnOffPWM(uint8_t timer)
+{
+  #if defined(TCCR0A) && defined(COM0A1)
+    if( timer == TIMER0A){
+     726:	31 30       	cpi	r19, 0x01	; 1
+     728:	d9 f4       	brne	.+54     	; 0x760 <digitalWrite.constprop.4+0x72>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:68
+      cbi(TCCR0A, COM0A1);
+     72a:	8a b5       	in	r24, 0x2a	; 42
+     72c:	8f 77       	andi	r24, 0x7F	; 127
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:74
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+      cbi(TCCR0A, COM0B1);
+     72e:	8a bd       	out	0x2a, r24	; 42
+digitalWrite.constprop.4():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:150
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+     730:	f0 e0       	ldi	r31, 0x00	; 0
+     732:	ee 0f       	add	r30, r30
+     734:	ff 1f       	adc	r31, r31
+     736:	e6 5d       	subi	r30, 0xD6	; 214
+     738:	ff 4f       	sbci	r31, 0xFF	; 255
+     73a:	a5 91       	lpm	r26, Z+
+     73c:	b4 91       	lpm	r27, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:153
+
+  if (val == LOW) {
+    uint8_t oldSREG = SREG;
+     73e:	8f b7       	in	r24, 0x3f	; 63
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:154
+    cli();
+     740:	f8 94       	cli
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:155
+    *out &= ~bit;
+     742:	9c 91       	ld	r25, X
+     744:	e2 2f       	mov	r30, r18
+     746:	e0 95       	com	r30
+     748:	e9 23       	and	r30, r25
+     74a:	ec 93       	st	X, r30
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:156
+    SREG = oldSREG;
+     74c:	8f bf       	out	0x3f, r24	; 63
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:163
+    uint8_t oldSREG = SREG;
+    cli();
+    *out |= bit;
+    SREG = oldSREG;
+  }
+}
+     74e:	08 95       	ret
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:138
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+     750:	85 e0       	ldi	r24, 0x05	; 5
+     752:	d8 cf       	rjmp	.-80     	; 0x704 <digitalWrite.constprop.4+0x16>
+     754:	82 e0       	ldi	r24, 0x02	; 2
+     756:	d6 cf       	rjmp	.-84     	; 0x704 <digitalWrite.constprop.4+0x16>
+     758:	84 e0       	ldi	r24, 0x04	; 4
+     75a:	d4 cf       	rjmp	.-88     	; 0x704 <digitalWrite.constprop.4+0x16>
+     75c:	83 e0       	ldi	r24, 0x03	; 3
+     75e:	d2 cf       	rjmp	.-92     	; 0x704 <digitalWrite.constprop.4+0x16>
+turnOffPWM():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:73
+      cbi(TCCR0A, COM0A1);
+      //cbi(TCCR0A, COM0A0);
+    } else
+  #endif
+  #if defined(TCCR0A) && defined(COM0B1)
+    if( timer == TIMER0B){
+     760:	32 30       	cpi	r19, 0x02	; 2
+     762:	19 f4       	brne	.+6      	; 0x76a <digitalWrite.constprop.4+0x7c>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:74
+      cbi(TCCR0A, COM0B1);
+     764:	8a b5       	in	r24, 0x2a	; 42
+     766:	8f 7d       	andi	r24, 0xDF	; 223
+     768:	e2 cf       	rjmp	.-60     	; 0x72e <digitalWrite.constprop.4+0x40>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:106
+      //cbi(TCCR1C,COM1D0);
+    } else
+  #else
+    // Timer1 for non-x61/x7
+    #if defined(TCCR1) && defined(COM1A1) // x5
+      if(timer == TIMER1A){
+     76a:	33 30       	cpi	r19, 0x03	; 3
+     76c:	21 f4       	brne	.+8      	; 0x776 <digitalWrite.constprop.4+0x88>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:107
+        TCCR1 &= ~(1<<COM1A1);
+     76e:	80 b7       	in	r24, 0x30	; 48
+     770:	8f 7d       	andi	r24, 0xDF	; 223
+     772:	80 bf       	out	0x30, r24	; 48
+     774:	dd cf       	rjmp	.-70     	; 0x730 <digitalWrite.constprop.4+0x42>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:112
+        //cbi(TCCR1, COM1A0);
+      } else
+    #endif
+    #if defined(TCCR1) && defined(COM1B1) // x5
+      if( timer == TIMER1B){
+     776:	34 30       	cpi	r19, 0x04	; 4
+     778:	d9 f6       	brne	.-74     	; 0x730 <digitalWrite.constprop.4+0x42>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:113
+        GTCCR &= ~(1<<COM1B1);
+     77a:	8c b5       	in	r24, 0x2c	; 44
+     77c:	8f 7d       	andi	r24, 0xDF	; 223
+     77e:	8c bd       	out	0x2c, r24	; 44
+     780:	d7 cf       	rjmp	.-82     	; 0x730 <digitalWrite.constprop.4+0x42>
+
+00000782 <digitalRead>:
+digitalRead():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:169
+
+int digitalRead(uint8_t pin)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+     782:	90 e0       	ldi	r25, 0x00	; 0
+     784:	fc 01       	movw	r30, r24
+     786:	ea 5c       	subi	r30, 0xCA	; 202
+     788:	ff 4f       	sbci	r31, 0xFF	; 255
+     78a:	24 91       	lpm	r18, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:170
+  uint8_t port = digitalPinToPort(pin);
+     78c:	fc 01       	movw	r30, r24
+     78e:	e0 5d       	subi	r30, 0xD0	; 208
+     790:	ff 4f       	sbci	r31, 0xFF	; 255
+     792:	e4 91       	lpm	r30, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:172
+
+  if (port == NOT_A_PIN) return LOW;
+     794:	ee 23       	and	r30, r30
+     796:	71 f0       	breq	.+28     	; 0x7b4 <digitalRead+0x32>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:180
+  // "read" should *NEVER* change the behavior of the thing you're using it on.
+  // That's why it's called "read" not "write". As an added bonus, sets the
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+     798:	f0 e0       	ldi	r31, 0x00	; 0
+     79a:	ee 0f       	add	r30, r30
+     79c:	ff 1f       	adc	r31, r31
+     79e:	ec 5d       	subi	r30, 0xDC	; 220
+     7a0:	ff 4f       	sbci	r31, 0xFF	; 255
+     7a2:	a5 91       	lpm	r26, Z+
+     7a4:	b4 91       	lpm	r27, Z
+     7a6:	ec 91       	ld	r30, X
+     7a8:	e2 23       	and	r30, r18
+     7aa:	81 e0       	ldi	r24, 0x01	; 1
+     7ac:	90 e0       	ldi	r25, 0x00	; 0
+     7ae:	21 f4       	brne	.+8      	; 0x7b8 <digitalRead+0x36>
+     7b0:	80 e0       	ldi	r24, 0x00	; 0
+     7b2:	08 95       	ret
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:172
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+  //uint8_t timer = digitalPinToTimer(pin);
+  uint8_t bit = digitalPinToBitMask(pin);
+  uint8_t port = digitalPinToPort(pin);
+
+  if (port == NOT_A_PIN) return LOW;
+     7b4:	80 e0       	ldi	r24, 0x00	; 0
+     7b6:	90 e0       	ldi	r25, 0x00	; 0
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:182
+  // stage for auto-fast-digitalRead() for compile time known pins.
+  // if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  if (*portInputRegister(port) & bit) return HIGH;
+  return LOW;
+}
+     7b8:	08 95       	ret
+
+000007ba <pinMode>:
+pinMode():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:33
+#define ARDUINO_MAIN
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+     7ba:	cf 93       	push	r28
+     7bc:	df 93       	push	r29
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:34
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+     7be:	87 ff       	sbrs	r24, 7
+     7c0:	09 c0       	rjmp	.+18     	; 0x7d4 <pinMode+0x1a>
+     7c2:	8f 77       	andi	r24, 0x7F	; 127
+     7c4:	79 f1       	breq	.+94     	; 0x824 <pinMode+0x6a>
+     7c6:	81 30       	cpi	r24, 0x01	; 1
+     7c8:	79 f1       	breq	.+94     	; 0x828 <pinMode+0x6e>
+     7ca:	82 30       	cpi	r24, 0x02	; 2
+     7cc:	79 f1       	breq	.+94     	; 0x82c <pinMode+0x72>
+     7ce:	83 30       	cpi	r24, 0x03	; 3
+     7d0:	79 f1       	breq	.+94     	; 0x830 <pinMode+0x76>
+     7d2:	8f ef       	ldi	r24, 0xFF	; 255
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:35
+  uint8_t bit = digitalPinToBitMask(pin);
+     7d4:	90 e0       	ldi	r25, 0x00	; 0
+     7d6:	fc 01       	movw	r30, r24
+     7d8:	ea 5c       	subi	r30, 0xCA	; 202
+     7da:	ff 4f       	sbci	r31, 0xFF	; 255
+     7dc:	24 91       	lpm	r18, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:36
+  uint8_t port = digitalPinToPort(pin);
+     7de:	80 5d       	subi	r24, 0xD0	; 208
+     7e0:	9f 4f       	sbci	r25, 0xFF	; 255
+     7e2:	fc 01       	movw	r30, r24
+     7e4:	84 91       	lpm	r24, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:39
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+     7e6:	88 23       	and	r24, r24
+     7e8:	d1 f0       	breq	.+52     	; 0x81e <pinMode+0x64>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:41
+
+  reg = portModeRegister(port);
+     7ea:	90 e0       	ldi	r25, 0x00	; 0
+     7ec:	88 0f       	add	r24, r24
+     7ee:	99 1f       	adc	r25, r25
+     7f0:	fc 01       	movw	r30, r24
+     7f2:	e2 5e       	subi	r30, 0xE2	; 226
+     7f4:	ff 4f       	sbci	r31, 0xFF	; 255
+     7f6:	a5 91       	lpm	r26, Z+
+     7f8:	b4 91       	lpm	r27, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:42
+  out = portOutputRegister(port);
+     7fa:	fc 01       	movw	r30, r24
+     7fc:	e6 5d       	subi	r30, 0xD6	; 214
+     7fe:	ff 4f       	sbci	r31, 0xFF	; 255
+     800:	c5 91       	lpm	r28, Z+
+     802:	d4 91       	lpm	r29, Z
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:44
+
+  if (mode == INPUT) {
+     804:	61 11       	cpse	r22, r1
+     806:	16 c0       	rjmp	.+44     	; 0x834 <pinMode+0x7a>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:45
+    uint8_t oldSREG = SREG;
+     808:	9f b7       	in	r25, 0x3f	; 63
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:46
+                cli();
+     80a:	f8 94       	cli
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:47
+    *reg &= ~bit;
+     80c:	8c 91       	ld	r24, X
+     80e:	e2 2f       	mov	r30, r18
+     810:	e0 95       	com	r30
+     812:	8e 23       	and	r24, r30
+     814:	8c 93       	st	X, r24
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:48
+    *out &= ~bit;
+     816:	28 81       	ld	r18, Y
+     818:	e2 23       	and	r30, r18
+     81a:	e8 83       	st	Y, r30
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:49
+    SREG = oldSREG;
+     81c:	9f bf       	out	0x3f, r25	; 63
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:62
+    uint8_t oldSREG = SREG;
+                cli();
+    *reg |= bit;
+    SREG = oldSREG;
+  }
+}
+     81e:	df 91       	pop	r29
+     820:	cf 91       	pop	r28
+     822:	08 95       	ret
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:34
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  if (pin&128) {pin=analogInputToDigitalPin((pin&127));}
+     824:	85 e0       	ldi	r24, 0x05	; 5
+     826:	d6 cf       	rjmp	.-84     	; 0x7d4 <pinMode+0x1a>
+     828:	82 e0       	ldi	r24, 0x02	; 2
+     82a:	d4 cf       	rjmp	.-88     	; 0x7d4 <pinMode+0x1a>
+     82c:	84 e0       	ldi	r24, 0x04	; 4
+     82e:	d2 cf       	rjmp	.-92     	; 0x7d4 <pinMode+0x1a>
+     830:	83 e0       	ldi	r24, 0x03	; 3
+     832:	d0 cf       	rjmp	.-96     	; 0x7d4 <pinMode+0x1a>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:57
+                cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+     834:	8f b7       	in	r24, 0x3f	; 63
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:58
+                cli();
+     836:	f8 94       	cli
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:59
+    *reg |= bit;
+     838:	ec 91       	ld	r30, X
+     83a:	e2 2b       	or	r30, r18
+     83c:	ec 93       	st	X, r30
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring_digital.c:60
+    SREG = oldSREG;
+     83e:	8f bf       	out	0x3f, r24	; 63
+     840:	ee cf       	rjmp	.-36     	; 0x81e <pinMode+0x64>
+
+00000842 <Adafruit_NeoPixel::begin()>:
+_ZN17Adafruit_NeoPixel5beginEv():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:128
+}
+
+/*!
+  @brief   Configure NeoPixel pin for output.
+*/
+void Adafruit_NeoPixel::begin(void) {
+     842:	cf 93       	push	r28
+     844:	df 93       	push	r29
+     846:	ec 01       	movw	r28, r24
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:129
+  if (pin >= 0) {
+     848:	8d 81       	ldd	r24, Y+5	; 0x05
+     84a:	9e 81       	ldd	r25, Y+6	; 0x06
+     84c:	97 fd       	sbrc	r25, 7
+     84e:	04 c0       	rjmp	.+8      	; 0x858 <Adafruit_NeoPixel::begin()+0x16>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:130
+    pinMode(pin, OUTPUT);
+     850:	61 e0       	ldi	r22, 0x01	; 1
+     852:	b3 df       	rcall	.-154    	; 0x7ba <pinMode>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:131
+    digitalWrite(pin, LOW);
+     854:	8d 81       	ldd	r24, Y+5	; 0x05
+     856:	4b df       	rcall	.-362    	; 0x6ee <digitalWrite.constprop.4>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:133
+  }
+  begun = true;
+     858:	81 e0       	ldi	r24, 0x01	; 1
+     85a:	88 83       	st	Y, r24
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:134
+}
+     85c:	df 91       	pop	r29
+     85e:	cf 91       	pop	r28
+     860:	08 95       	ret
+
+00000862 <__vector_5>:
+__vector_5():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:308
+      #error "cannot find Millis() timer overflow vector"
+    #endif
+  #else
+    #error "Millis() timer not defined!"
+  #endif
+  {
+     862:	1f 92       	push	r1
+     864:	0f 92       	push	r0
+     866:	0f b6       	in	r0, 0x3f	; 63
+     868:	0f 92       	push	r0
+     86a:	11 24       	eor	r1, r1
+     86c:	4f 93       	push	r20
+     86e:	5f 93       	push	r21
+     870:	6f 93       	push	r22
+     872:	7f 93       	push	r23
+     874:	8f 93       	push	r24
+     876:	9f 93       	push	r25
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:311
+    // copy these to local variables so they can be stored in registers
+    // (volatile variables must be read from memory on every access)
+    unsigned long m = millis_timer_millis;
+     878:	40 91 c6 00 	lds	r20, 0x00C6	; 0x8000c6 <millis_timer_millis>
+     87c:	50 91 c7 00 	lds	r21, 0x00C7	; 0x8000c7 <millis_timer_millis+0x1>
+     880:	60 91 c8 00 	lds	r22, 0x00C8	; 0x8000c8 <millis_timer_millis+0x2>
+     884:	70 91 c9 00 	lds	r23, 0x00C9	; 0x8000c9 <millis_timer_millis+0x3>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:312
+    unsigned char f = millis_timer_fract;
+     888:	80 91 c5 00 	lds	r24, 0x00C5	; 0x8000c5 <millis_timer_fract>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:315
+#ifdef CORRECT_EXACT_MILLIS
+    static unsigned char correct_exact = 0;     // rollover intended
+    if (++correct_exact < CORRECT_EXACT_MANY) {
+     88c:	90 91 c4 00 	lds	r25, 0x00C4	; 0x8000c4 <__data_end>
+     890:	9f 5f       	subi	r25, 0xFF	; 255
+     892:	90 93 c4 00 	sts	0x00C4, r25	; 0x8000c4 <__data_end>
+     896:	9f 31       	cpi	r25, 0x1F	; 31
+     898:	08 f4       	brcc	.+2      	; 0x89c <__vector_5+0x3a>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:316
+      ++f;
+     89a:	8f 5f       	subi	r24, 0xFF	; 255
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:319
+    }
+#endif
+    f += FRACT_INC;
+     89c:	9c e7       	ldi	r25, 0x7C	; 124
+     89e:	98 0f       	add	r25, r24
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:321
+
+    if (f >= FRACT_MAX)
+     8a0:	9d 37       	cpi	r25, 0x7D	; 125
+     8a2:	30 f0       	brcs	.+12     	; 0x8b0 <__vector_5+0x4e>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:323
+    {
+      f -= FRACT_MAX;
+     8a4:	9f ef       	ldi	r25, 0xFF	; 255
+     8a6:	98 0f       	add	r25, r24
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:324
+      m += MILLIS_INC + 1;
+     8a8:	4f 5f       	subi	r20, 0xFF	; 255
+     8aa:	5f 4f       	sbci	r21, 0xFF	; 255
+     8ac:	6f 4f       	sbci	r22, 0xFF	; 255
+     8ae:	7f 4f       	sbci	r23, 0xFF	; 255
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:331
+    else
+    {
+      m += MILLIS_INC;
+    }
+
+    millis_timer_fract = f;
+     8b0:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <millis_timer_fract>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:332
+    millis_timer_millis = m;
+     8b4:	40 93 c6 00 	sts	0x00C6, r20	; 0x8000c6 <millis_timer_millis>
+     8b8:	50 93 c7 00 	sts	0x00C7, r21	; 0x8000c7 <millis_timer_millis+0x1>
+     8bc:	60 93 c8 00 	sts	0x00C8, r22	; 0x8000c8 <millis_timer_millis+0x2>
+     8c0:	70 93 c9 00 	sts	0x00C9, r23	; 0x8000c9 <millis_timer_millis+0x3>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:336
+#ifndef CORRECT_EXACT_MICROS
+    millis_timer_overflow_count++;
+#endif
+  }
+     8c4:	9f 91       	pop	r25
+     8c6:	8f 91       	pop	r24
+     8c8:	7f 91       	pop	r23
+     8ca:	6f 91       	pop	r22
+     8cc:	5f 91       	pop	r21
+     8ce:	4f 91       	pop	r20
+     8d0:	0f 90       	pop	r0
+     8d2:	0f be       	out	0x3f, r0	; 63
+     8d4:	0f 90       	pop	r0
+     8d6:	1f 90       	pop	r1
+     8d8:	18 95       	reti
+
+000008da <Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, int, unsigned char) [clone .constprop.2]>:
+_ZN17Adafruit_NeoPixelC2Ejih.constprop.2():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:80
+              NeoPixels expecting an 800 KHz (vs 400 KHz) data stream
+              with color bytes expressed in green, red, blue order per
+              pixel.
+  @return  Adafruit_NeoPixel object. Call the begin() function before use.
+*/
+Adafruit_NeoPixel::Adafruit_NeoPixel(uint16_t n, int16_t p, neoPixelType t)
+     8da:	cf 92       	push	r12
+     8dc:	df 92       	push	r13
+     8de:	ef 92       	push	r14
+     8e0:	ff 92       	push	r15
+     8e2:	0f 93       	push	r16
+     8e4:	1f 93       	push	r17
+     8e6:	cf 93       	push	r28
+     8e8:	df 93       	push	r29
+     8ea:	ec 01       	movw	r28, r24
+     8ec:	6b 01       	movw	r12, r22
+     8ee:	14 2f       	mov	r17, r20
+     8f0:	05 2f       	mov	r16, r21
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:81
+    : begun(false), brightness(0), pixels(NULL), endTime(0) {
+     8f2:	18 82       	st	Y, r1
+     8f4:	1f 82       	std	Y+7, r1	; 0x07
+     8f6:	1e 86       	std	Y+14, r1	; 0x0e
+     8f8:	1f 86       	std	Y+15, r1	; 0x0f
+     8fa:	18 8a       	std	Y+16, r1	; 0x10
+     8fc:	19 8a       	std	Y+17, r1	; 0x11
+updateType():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:179
+           (length, pin, type).
+*/
+void Adafruit_NeoPixel::updateType(neoPixelType t) {
+  bool oldThreeBytesPerPixel = (wOffset == rOffset); // false if RGBW
+
+  wOffset = (t >> 6) & 0b11; // See notes in header file
+     8fe:	81 e0       	ldi	r24, 0x01	; 1
+     900:	8d 87       	std	Y+13, r24	; 0x0d
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:180
+  rOffset = (t >> 4) & 0b11; // regarding R/G/B/W offsets
+     902:	8a 87       	std	Y+10, r24	; 0x0a
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:181
+  gOffset = (t >> 2) & 0b11;
+     904:	1b 86       	std	Y+11, r1	; 0x0b
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:182
+  bOffset = t & 0b11;
+     906:	82 e0       	ldi	r24, 0x02	; 2
+     908:	8c 87       	std	Y+12, r24	; 0x0c
+updateLength():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:150
+*/
+void Adafruit_NeoPixel::updateLength(uint16_t n) {
+  free(pixels); // Free existing data (if any)
+
+  // Allocate new data -- note: ALL PIXELS ARE CLEARED
+  numBytes = n * ((wOffset == rOffset) ? 3 : 4);
+     90a:	cb 01       	movw	r24, r22
+     90c:	63 e0       	ldi	r22, 0x03	; 3
+     90e:	70 e0       	ldi	r23, 0x00	; 0
+     910:	5b d2       	rcall	.+1206   	; 0xdc8 <__mulhi3>
+     912:	7c 01       	movw	r14, r24
+     914:	9c 83       	std	Y+4, r25	; 0x04
+     916:	8b 83       	std	Y+3, r24	; 0x03
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:151
+  if ((pixels = (uint8_t *)malloc(numBytes))) {
+     918:	d6 d2       	rcall	.+1452   	; 0xec6 <malloc>
+     91a:	99 87       	std	Y+9, r25	; 0x09
+     91c:	88 87       	std	Y+8, r24	; 0x08
+     91e:	00 97       	sbiw	r24, 0x00	; 0
+     920:	69 f1       	breq	.+90     	; 0x97c <Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, int, unsigned char) [clone .constprop.2]+0xa2>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:152
+    memset(pixels, 0, numBytes);
+     922:	a7 01       	movw	r20, r14
+     924:	70 e0       	ldi	r23, 0x00	; 0
+     926:	60 e0       	ldi	r22, 0x00	; 0
+     928:	f3 d3       	rcall	.+2022   	; 0x1110 <memset>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:153
+    numLEDs = n;
+     92a:	da 82       	std	Y+2, r13	; 0x02
+     92c:	c9 82       	std	Y+1, r12	; 0x01
+setPin():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3132
+  @param   p  Arduino pin number (-1 = no pin).
+*/
+void Adafruit_NeoPixel::setPin(int16_t p) {
+  if (begun && (pin >= 0))
+    pinMode(pin, INPUT); // Disable existing out pin
+  pin = p;
+     92e:	1d 83       	std	Y+5, r17	; 0x05
+     930:	0e 83       	std	Y+6, r16	; 0x06
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3133
+  if (begun) {
+     932:	88 81       	ld	r24, Y
+     934:	88 23       	and	r24, r24
+     936:	29 f0       	breq	.+10     	; 0x942 <Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, int, unsigned char) [clone .constprop.2]+0x68>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3134
+    pinMode(p, OUTPUT);
+     938:	61 e0       	ldi	r22, 0x01	; 1
+     93a:	81 2f       	mov	r24, r17
+     93c:	3e df       	rcall	.-388    	; 0x7ba <pinMode>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3135
+    digitalWrite(p, LOW);
+     93e:	81 2f       	mov	r24, r17
+     940:	d6 de       	rcall	.-596    	; 0x6ee <digitalWrite.constprop.4>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3138
+  }
+#if defined(__AVR__)
+  port = portOutputRegister(digitalPinToPort(p));
+     942:	81 2f       	mov	r24, r17
+     944:	90 2f       	mov	r25, r16
+     946:	fc 01       	movw	r30, r24
+     948:	e0 5d       	subi	r30, 0xD0	; 208
+     94a:	ff 4f       	sbci	r31, 0xFF	; 255
+     94c:	e4 91       	lpm	r30, Z
+     94e:	f0 e0       	ldi	r31, 0x00	; 0
+     950:	ee 0f       	add	r30, r30
+     952:	ff 1f       	adc	r31, r31
+     954:	e6 5d       	subi	r30, 0xD6	; 214
+     956:	ff 4f       	sbci	r31, 0xFF	; 255
+     958:	25 91       	lpm	r18, Z+
+     95a:	34 91       	lpm	r19, Z
+     95c:	3b 8b       	std	Y+19, r19	; 0x13
+     95e:	2a 8b       	std	Y+18, r18	; 0x12
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:3139
+  pinMask = digitalPinToBitMask(p);
+     960:	fc 01       	movw	r30, r24
+     962:	ea 5c       	subi	r30, 0xCA	; 202
+     964:	ff 4f       	sbci	r31, 0xFF	; 255
+     966:	e4 91       	lpm	r30, Z
+     968:	ec 8b       	std	Y+20, r30	; 0x14
+_ZN17Adafruit_NeoPixelC2Ejih.constprop.2():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:95
+    pio = pio1;
+    sm = pio_claim_unused_sm(pio, true); // panic if no SM is free
+  }
+  init = true;
+#endif
+}
+     96a:	df 91       	pop	r29
+     96c:	cf 91       	pop	r28
+     96e:	1f 91       	pop	r17
+     970:	0f 91       	pop	r16
+     972:	ff 90       	pop	r15
+     974:	ef 90       	pop	r14
+     976:	df 90       	pop	r13
+     978:	cf 90       	pop	r12
+     97a:	08 95       	ret
+updateLength():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:155
+  numBytes = n * ((wOffset == rOffset) ? 3 : 4);
+  if ((pixels = (uint8_t *)malloc(numBytes))) {
+    memset(pixels, 0, numBytes);
+    numLEDs = n;
+  } else {
+    numLEDs = numBytes = 0;
+     97c:	1c 82       	std	Y+4, r1	; 0x04
+     97e:	1b 82       	std	Y+3, r1	; 0x03
+     980:	1a 82       	std	Y+2, r1	; 0x02
+     982:	19 82       	std	Y+1, r1	; 0x01
+     984:	d4 cf       	rjmp	.-88     	; 0x92e <Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, int, unsigned char) [clone .constprop.2]+0x54>
+
+00000986 <main>:
+main():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1032
+            #error "Custom tuning is not supported in the current version of ATTinyCore"
+          #endif // end check for each prescale freq
+        #endif //end if not 16
+      #endif // end if not 16.5
+    #elif (F_CPU == 16500000L) // not pretuned to 16.5 (no micronucleus), but 16.5 requested, presumably for VUSB.
+      if (OSCCAL == read_factory_calibration()) {
+     986:	91 b7       	in	r25, 0x31	; 49
+read_factory_calibration():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:981
+#endif
+
+
+uint8_t read_factory_calibration(void)
+{
+  uint8_t value = boot_signature_byte_get(1);
+     988:	81 e2       	ldi	r24, 0x21	; 33
+     98a:	e1 e0       	ldi	r30, 0x01	; 1
+     98c:	f0 e0       	ldi	r31, 0x00	; 0
+     98e:	80 93 57 00 	sts	0x0057, r24	; 0x800057 <__EEPROM_REGION_LENGTH__+0x7f0057>
+     992:	84 91       	lpm	r24, Z
+main():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1032
+            #error "Custom tuning is not supported in the current version of ATTinyCore"
+          #endif // end check for each prescale freq
+        #endif //end if not 16
+      #endif // end if not 16.5
+    #elif (F_CPU == 16500000L) // not pretuned to 16.5 (no micronucleus), but 16.5 requested, presumably for VUSB.
+      if (OSCCAL == read_factory_calibration()) {
+     994:	98 13       	cpse	r25, r24
+     996:	06 c0       	rjmp	.+12     	; 0x9a4 <main+0x1e>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1034
+        // adjust the calibration up from 16.0mhz to 16.5mhz
+        if (OSCCAL >= 128) {
+     998:	01 b6       	in	r0, 0x31	; 49
+     99a:	07 fe       	sbrs	r0, 7
+     99c:	7c c0       	rjmp	.+248    	; 0xa96 <main+0x110>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1036
+          // maybe 8 is better? oh well - only about 0.3% out anyway
+          OSCCAL += 7;
+     99e:	81 b7       	in	r24, 0x31	; 49
+     9a0:	89 5f       	subi	r24, 0xF9	; 249
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1038
+        } else {
+          OSCCAL += 5;
+     9a2:	81 bf       	out	0x31, r24	; 49
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1138
+*/
+
+  // Use the Millis Timer for fast PWM (unless it doesn't have an output).
+  #if (TIMER_TO_USE_FOR_MILLIS == 0)
+    #if defined(WGM01) // if Timer0 has PWM
+      TCCR0A = (1<<WGM01) | (1<<WGM00);
+     9a4:	83 e0       	ldi	r24, 0x03	; 3
+     9a6:	8a bd       	out	0x2a, r24	; 42
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1141
+    #endif
+    #if defined(TCCR0B) //The x61 has a wacky Timer0!
+      TCCR0B = (MillisTimer_Prescale_Index << CS00);
+     9a8:	83 bf       	out	0x33, r24	; 51
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1162
+    TCCR1A = 1<<WGM10;
+    TCCR1B = (1<<WGM12) | (MillisTimer_Prescale_Index << CS10);
+  #endif
+
+  // this needs to be called before setup() or some functions won't work there
+  sei();
+     9aa:	78 94       	sei
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1167
+
+  #ifndef DISABLEMILLIS
+    // Enable the overflow interrupt (this is the basic system tic-toc for millis)
+    #if defined(TIMSK) && defined(TOIE0) && (TIMER_TO_USE_FOR_MILLIS == 0)
+      sbi(TIMSK, TOIE0);
+     9ac:	89 b7       	in	r24, 0x39	; 57
+     9ae:	82 60       	ori	r24, 0x02	; 2
+     9b0:	89 bf       	out	0x39, r24	; 57
+initToneTimerInternal():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:958
+    #elif defined(__AVR_ATtiny43__)
+      TCCR1A = 3; //WGM 10=1, WGM11=1
+      TCCR1B = 3; //prescaler of 64
+    #elif (TIMER_TO_USE_FOR_TONE == 1) && defined(TCCR1) // ATtiny x5
+      // Use the Tone Timer for fast PWM as phase correct not supported by this timer
+      GTCCR = (1<<PWM1B);
+     9b2:	80 e4       	ldi	r24, 0x40	; 64
+     9b4:	8c bd       	out	0x2c, r24	; 44
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:959
+      OCR1C = 0xFF; //Use 255 as the top to match with the others as this module doesn't have a 8bit PWM mode.
+     9b6:	8f ef       	ldi	r24, 0xFF	; 255
+     9b8:	8d bd       	out	0x2d, r24	; 45
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:960
+      TCCR1 = (1<<CTC1) | (1<<PWM1A) | (ToneTimer_Prescale_Index << CS10);
+     9ba:	87 ec       	ldi	r24, 0xC7	; 199
+     9bc:	80 bf       	out	0x30, r24	; 48
+main():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1214
+  #if defined( INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER ) && INITIALIZE_ANALOG_TO_DIGITAL_CONVERTER
+    #if defined(ADCSRA)
+      // set a2d prescale factor
+      // ADCSRA = (ADCSRA & ~((1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0))) | (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+      // dude, this is being called on startup. We know that ADCSRA is 0! Why add a RMW cycle?!
+      ADCSRA = (ADC_ARDUINO_PRESCALER << ADPS0) | (1<<ADEN);
+     9be:	87 e8       	ldi	r24, 0x87	; 135
+     9c0:	86 b9       	out	0x06, r24	; 6
+setup():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:781
+  }
+}
+
+// ---------------- SETUP ----------------
+void setup() {
+  pinMode(PIN_STOP, INPUT);
+     9c2:	60 e0       	ldi	r22, 0x00	; 0
+     9c4:	81 e0       	ldi	r24, 0x01	; 1
+     9c6:	f9 de       	rcall	.-526    	; 0x7ba <pinMode>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:782
+  pinMode(PIN_LEFT, INPUT);
+     9c8:	60 e0       	ldi	r22, 0x00	; 0
+     9ca:	82 e0       	ldi	r24, 0x02	; 2
+     9cc:	f6 de       	rcall	.-532    	; 0x7ba <pinMode>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:783
+  pinMode(PIN_RIGHT, INPUT);
+     9ce:	60 e0       	ldi	r22, 0x00	; 0
+     9d0:	83 e0       	ldi	r24, 0x03	; 3
+     9d2:	f3 de       	rcall	.-538    	; 0x7ba <pinMode>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:789
+
+  // Keep NeoPixel pins as INPUT during bootloader window
+  //pinMode(RINGS_PIN, INPUT);
+  //pinMode(PLATE_PIN, INPUT);
+
+  rings.begin();
+     9d4:	83 ee       	ldi	r24, 0xE3	; 227
+     9d6:	90 e0       	ldi	r25, 0x00	; 0
+     9d8:	34 df       	rcall	.-408    	; 0x842 <Adafruit_NeoPixel::begin()>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:790
+  plate.begin();
+     9da:	8d ec       	ldi	r24, 0xCD	; 205
+     9dc:	90 e0       	ldi	r25, 0x00	; 0
+     9de:	31 df       	rcall	.-414    	; 0x842 <Adafruit_NeoPixel::begin()>
+loop():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:807
+void loop() {
+  static uint8_t loopDivider = 0;
+  if (++loopDivider < LOOP_DIVIDER) return;
+  loopDivider = 0;
+
+  bool leftState  = digitalRead(PIN_LEFT);
+     9e0:	88 24       	eor	r8, r8
+     9e2:	83 94       	inc	r8
+setMode():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:667
+*/
+
+// ---------------- MODE MGMT ----------------
+void setMode(Mode m) {
+  if (m != currentMode) {
+    currentMode = m;
+     9e4:	ee 24       	eor	r14, r14
+     9e6:	e3 94       	inc	r14
+     9e8:	f1 2c       	mov	r15, r1
+     9ea:	64 e0       	ldi	r22, 0x04	; 4
+     9ec:	a6 2e       	mov	r10, r22
+     9ee:	b1 2c       	mov	r11, r1
+loop():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:805
+
+// ---------------- MAIN LOOP ----------------
+void loop() {
+  static uint8_t loopDivider = 0;
+  if (++loopDivider < LOOP_DIVIDER) return;
+  loopDivider = 0;
+     9f0:	10 92 0d 01 	sts	0x010D, r1	; 0x80010d <loop::loopDivider>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:807
+
+  bool leftState  = digitalRead(PIN_LEFT);
+     9f4:	82 e0       	ldi	r24, 0x02	; 2
+     9f6:	c5 de       	rcall	.-630    	; 0x782 <digitalRead>
+     9f8:	d1 e0       	ldi	r29, 0x01	; 1
+     9fa:	89 2b       	or	r24, r25
+     9fc:	09 f4       	brne	.+2      	; 0xa00 <main+0x7a>
+     9fe:	d0 e0       	ldi	r29, 0x00	; 0
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:808
+  bool rightState = digitalRead(PIN_RIGHT);
+     a00:	83 e0       	ldi	r24, 0x03	; 3
+     a02:	bf de       	rcall	.-642    	; 0x782 <digitalRead>
+     a04:	c1 e0       	ldi	r28, 0x01	; 1
+     a06:	89 2b       	or	r24, r25
+     a08:	09 f4       	brne	.+2      	; 0xa0c <main+0x86>
+     a0a:	c0 e0       	ldi	r28, 0x00	; 0
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:809
+  bool stopActive = digitalRead(PIN_STOP);
+     a0c:	81 e0       	ldi	r24, 0x01	; 1
+     a0e:	b9 de       	rcall	.-654    	; 0x782 <digitalRead>
+     a10:	20 91 0a 01 	lds	r18, 0x010A	; 0x80010a <tick>
+     a14:	30 91 0b 01 	lds	r19, 0x010B	; 0x80010b <tick+0x1>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:812
+
+  // -------- LEFT DEBOUNCE --------
+  if (leftState != lastLeftStateStable)
+     a18:	40 91 0c 01 	lds	r20, 0x010C	; 0x80010c <lastLeftStateStable>
+     a1c:	d4 17       	cp	r29, r20
+     a1e:	21 f0       	breq	.+8      	; 0xa28 <main+0xa2>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:813
+    lastLeftChangeTime = tick;
+     a20:	30 93 09 01 	sts	0x0109, r19	; 0x800109 <lastLeftChangeTime+0x1>
+     a24:	20 93 08 01 	sts	0x0108, r18	; 0x800108 <lastLeftChangeTime>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:815
+
+  if ((uint16_t)(tick - lastLeftChangeTime) >= BLINKER_DEBOUNCE_TICKS) {
+     a28:	40 91 08 01 	lds	r20, 0x0108	; 0x800108 <lastLeftChangeTime>
+     a2c:	50 91 09 01 	lds	r21, 0x0109	; 0x800109 <lastLeftChangeTime+0x1>
+     a30:	42 17       	cp	r20, r18
+     a32:	53 07       	cpc	r21, r19
+     a34:	11 f0       	breq	.+4      	; 0xa3a <main+0xb4>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:816
+    lastLeftStateStable = leftState;
+     a36:	d0 93 0c 01 	sts	0x010C, r29	; 0x80010c <lastLeftStateStable>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:820
+  }
+
+  // -------- RIGHT DEBOUNCE --------
+  if (rightState != lastRightStateStable)
+     a3a:	40 91 07 01 	lds	r20, 0x0107	; 0x800107 <lastRightStateStable>
+     a3e:	c4 17       	cp	r28, r20
+     a40:	21 f0       	breq	.+8      	; 0xa4a <main+0xc4>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:821
+    lastRightChangeTime = tick;
+     a42:	30 93 06 01 	sts	0x0106, r19	; 0x800106 <lastRightChangeTime+0x1>
+     a46:	20 93 05 01 	sts	0x0105, r18	; 0x800105 <lastRightChangeTime>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:823
+
+  if ((uint16_t)(tick - lastRightChangeTime) >= BLINKER_DEBOUNCE_TICKS) {
+     a4a:	40 91 05 01 	lds	r20, 0x0105	; 0x800105 <lastRightChangeTime>
+     a4e:	50 91 06 01 	lds	r21, 0x0106	; 0x800106 <lastRightChangeTime+0x1>
+     a52:	42 17       	cp	r20, r18
+     a54:	53 07       	cpc	r21, r19
+     a56:	11 f0       	breq	.+4      	; 0xa5c <main+0xd6>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:824
+    lastRightStateStable = rightState;
+     a58:	c0 93 07 01 	sts	0x0107, r28	; 0x800107 <lastRightStateStable>
+updateEmergencyState():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:373
+static inline void updateEmergencyState(bool leftActive, bool rightActive) {
+  if (leftActive && rightActive) {
+    emergencyLatched = true;
+    emergencyLatchTick = tick;
+    emergencyReleaseTick = 0;
+  } else if (emergencyLatched) {
+     a5c:	60 91 04 01 	lds	r22, 0x0104	; 0x800104 <emergencyLatched>
+     a60:	40 91 00 01 	lds	r20, 0x0100	; 0x800100 <currentMode>
+     a64:	50 91 01 01 	lds	r21, 0x0101	; 0x800101 <currentMode+0x1>
+     a68:	66 23       	and	r22, r22
+     a6a:	01 f1       	breq	.+64     	; 0xaac <main+0x126>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:376
+    // count how long both are inactive
+    if (!leftActive && !rightActive) {
+      if (emergencyReleaseTick == 0)
+     a6c:	60 91 02 01 	lds	r22, 0x0102	; 0x800102 <emergencyReleaseTick>
+     a70:	70 91 03 01 	lds	r23, 0x0103	; 0x800103 <emergencyReleaseTick+0x1>
+     a74:	61 15       	cp	r22, r1
+     a76:	71 05       	cpc	r23, r1
+     a78:	89 f4       	brne	.+34     	; 0xa9c <main+0x116>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:377
+        emergencyReleaseTick = tick;
+     a7a:	30 93 03 01 	sts	0x0103, r19	; 0x800103 <emergencyReleaseTick+0x1>
+     a7e:	20 93 02 01 	sts	0x0102, r18	; 0x800102 <emergencyReleaseTick>
+loop():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:850
+
+  // -------- EMERGENCY LATCH UPDATE --------
+  updateEmergencyState(leftActive, rightActive);
+
+  // -------- MODE PRIORITY --------
+  if (stopActive)
+     a82:	89 2b       	or	r24, r25
+     a84:	b1 f4       	brne	.+44     	; 0xab2 <main+0x12c>
+setMode():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:666
+}
+*/
+
+// ---------------- MODE MGMT ----------------
+void setMode(Mode m) {
+  if (m != currentMode) {
+     a86:	44 30       	cpi	r20, 0x04	; 4
+     a88:	51 05       	cpc	r21, r1
+     a8a:	f1 f0       	breq	.+60     	; 0xac8 <main+0x142>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:667
+    currentMode = m;
+     a8c:	b0 92 01 01 	sts	0x0101, r11	; 0x800101 <currentMode+0x1>
+     a90:	a0 92 00 01 	sts	0x0100, r10	; 0x800100 <currentMode>
+     a94:	19 c0       	rjmp	.+50     	; 0xac8 <main+0x142>
+main():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:1038
+        // adjust the calibration up from 16.0mhz to 16.5mhz
+        if (OSCCAL >= 128) {
+          // maybe 8 is better? oh well - only about 0.3% out anyway
+          OSCCAL += 7;
+        } else {
+          OSCCAL += 5;
+     a96:	81 b7       	in	r24, 0x31	; 49
+     a98:	8b 5f       	subi	r24, 0xFB	; 251
+     a9a:	83 cf       	rjmp	.-250    	; 0x9a2 <main+0x1c>
+updateEmergencyState():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:378
+  } else if (emergencyLatched) {
+    // count how long both are inactive
+    if (!leftActive && !rightActive) {
+      if (emergencyReleaseTick == 0)
+        emergencyReleaseTick = tick;
+      else if ((uint16_t)(tick - emergencyReleaseTick) >= EMERG_RELEASE_TICKS)
+     a9c:	f9 01       	movw	r30, r18
+     a9e:	e6 1b       	sub	r30, r22
+     aa0:	f7 0b       	sbc	r31, r23
+     aa2:	e6 39       	cpi	r30, 0x96	; 150
+     aa4:	f1 05       	cpc	r31, r1
+     aa6:	68 f3       	brcs	.-38     	; 0xa82 <main+0xfc>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:379
+        emergencyLatched = false;
+     aa8:	10 92 04 01 	sts	0x0104, r1	; 0x800104 <emergencyLatched>
+loop():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:850
+
+  // -------- EMERGENCY LATCH UPDATE --------
+  updateEmergencyState(leftActive, rightActive);
+
+  // -------- MODE PRIORITY --------
+  if (stopActive)
+     aac:	89 2b       	or	r24, r25
+     aae:	09 f4       	brne	.+2      	; 0xab2 <main+0x12c>
+     ab0:	5a c1       	rjmp	.+692    	; 0xd66 <main+0x3e0>
+setMode():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:666
+}
+*/
+
+// ---------------- MODE MGMT ----------------
+void setMode(Mode m) {
+  if (m != currentMode) {
+     ab2:	41 30       	cpi	r20, 0x01	; 1
+     ab4:	51 05       	cpc	r21, r1
+     ab6:	41 f0       	breq	.+16     	; 0xac8 <main+0x142>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:667
+    currentMode = m;
+     ab8:	f0 92 01 01 	sts	0x0101, r15	; 0x800101 <currentMode+0x1>
+     abc:	e0 92 00 01 	sts	0x0100, r14	; 0x800100 <currentMode>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:676
+//    } else {
+//      stopEmergencyRingAnim();
+//    }
+
+    if (m == MODE_STOP) {
+      platePos = 0;
+     ac0:	10 92 ff 00 	sts	0x00FF, r1	; 0x8000ff <platePos>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:677
+      plateDir = 1;
+     ac4:	80 92 60 00 	sts	0x0060, r8	; 0x800060 <__DATA_REGION_ORIGIN__>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:692
+  }
+}
+
+// ---------------- ANIMATION UPDATE ----------------
+void updateAnimation() {
+  animTick++;
+     ac8:	00 91 fd 00 	lds	r16, 0x00FD	; 0x8000fd <animTick>
+     acc:	10 91 fe 00 	lds	r17, 0x00FE	; 0x8000fe <animTick+0x1>
+     ad0:	0f 5f       	subi	r16, 0xFF	; 255
+     ad2:	1f 4f       	sbci	r17, 0xFF	; 255
+     ad4:	10 93 fe 00 	sts	0x00FE, r17	; 0x8000fe <animTick+0x1>
+     ad8:	00 93 fd 00 	sts	0x00FD, r16	; 0x8000fd <animTick>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:693
+  tick++;
+     adc:	2f 5f       	subi	r18, 0xFF	; 255
+     ade:	3f 4f       	sbci	r19, 0xFF	; 255
+     ae0:	30 93 0b 01 	sts	0x010B, r19	; 0x80010b <tick+0x1>
+     ae4:	20 93 0a 01 	sts	0x010A, r18	; 0x80010a <tick>
+delay():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:518
+  void yield(void) __attribute__ ((weak, alias("__empty")));
+
+  void delay(unsigned long ms)
+  {
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+     ae8:	d4 da       	rcall	.-2648   	; 0x92 <micros>
+     aea:	eb 01       	movw	r28, r22
+     aec:	4a e0       	ldi	r20, 0x0A	; 10
+     aee:	44 2e       	mov	r4, r20
+     af0:	51 2c       	mov	r5, r1
+     af2:	61 2c       	mov	r6, r1
+     af4:	71 2c       	mov	r7, r1
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:522
+
+    while (ms > 0) {
+      yield();
+      while (((uint16_t)micros() - start) >= 1000 && ms) {
+     af6:	cd da       	rcall	.-2662   	; 0x92 <micros>
+     af8:	6c 1b       	sub	r22, r28
+     afa:	7d 0b       	sbc	r23, r29
+     afc:	68 3e       	cpi	r22, 0xE8	; 232
+     afe:	73 40       	sbci	r23, 0x03	; 3
+     b00:	80 f1       	brcs	.+96     	; 0xb62 <main+0x1dc>
+     b02:	41 14       	cp	r4, r1
+     b04:	51 04       	cpc	r5, r1
+     b06:	61 04       	cpc	r6, r1
+     b08:	71 04       	cpc	r7, r1
+     b0a:	19 f5       	brne	.+70     	; 0xb52 <main+0x1cc>
+     b0c:	c0 91 00 01 	lds	r28, 0x0100	; 0x800100 <currentMode>
+     b10:	d0 91 01 01 	lds	r29, 0x0101	; 0x800101 <currentMode+0x1>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:702
+  // ---------- RINGS ----------
+//  if (ringEmergState == RING_EMERG_ACTIVE) {
+//    animRingsEmergencyRings();
+//  }
+//  else 
+  if ((blinkState == BLINK_ACTIVE) && (currentMode == MODE_IDLE || currentMode == MODE_STOP)) {
+     b14:	80 91 fb 00 	lds	r24, 0x00FB	; 0x8000fb <blinkState>
+     b18:	90 91 fc 00 	lds	r25, 0x00FC	; 0x8000fc <blinkState+0x1>
+     b1c:	01 97       	sbiw	r24, 0x01	; 1
+     b1e:	09 f0       	breq	.+2      	; 0xb22 <main+0x19c>
+     b20:	77 c0       	rjmp	.+238    	; 0xc10 <main+0x28a>
+     b22:	c2 30       	cpi	r28, 0x02	; 2
+     b24:	d1 05       	cpc	r29, r1
+     b26:	08 f0       	brcs	.+2      	; 0xb2a <main+0x1a4>
+     b28:	73 c0       	rjmp	.+230    	; 0xc10 <main+0x28a>
+animRingsEyeBlink():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:494
+void animRingsEyeBlink() {
+  if (blinkState != BLINK_ACTIVE)
+    return;
+
+  // ---- timing gate ----
+  if (++blinkTick < BLINK_STEP_TICKS)
+     b2a:	80 91 ca 00 	lds	r24, 0x00CA	; 0x8000ca <blinkTick>
+     b2e:	8f 5f       	subi	r24, 0xFF	; 255
+     b30:	82 30       	cpi	r24, 0x02	; 2
+     b32:	e8 f4       	brcc	.+58     	; 0xb6e <main+0x1e8>
+     b34:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <blinkTick>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:732
+  // ---------- PLATE ----------
+//  if (ringEmergState == RING_EMERG_ACTIVE) {
+//    animPlateEmergTrail();   // or animPlateIdleOverlay(), etc.
+//  }
+//  else {
+    switch (currentMode) {
+     b38:	c2 30       	cpi	r28, 0x02	; 2
+     b3a:	d1 05       	cpc	r29, r1
+     b3c:	09 f4       	brne	.+2      	; 0xb40 <main+0x1ba>
+     b3e:	01 c1       	rjmp	.+514    	; 0xd42 <main+0x3bc>
+     b40:	08 f0       	brcs	.+2      	; 0xb44 <main+0x1be>
+     b42:	f6 c0       	rjmp	.+492    	; 0xd30 <main+0x3aa>
+     b44:	20 97       	sbiw	r28, 0x00	; 0
+     b46:	09 f4       	brne	.+2      	; 0xb4a <main+0x1c4>
+     b48:	cb c0       	rjmp	.+406    	; 0xce0 <main+0x35a>
+     b4a:	21 97       	sbiw	r28, 0x01	; 1
+     b4c:	09 f0       	breq	.+2      	; 0xb50 <main+0x1ca>
+     b4e:	6d c0       	rjmp	.+218    	; 0xc2a <main+0x2a4>
+     b50:	e9 c0       	rjmp	.+466    	; 0xd24 <main+0x39e>
+delay():
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:523
+        ms--;
+     b52:	f1 e0       	ldi	r31, 0x01	; 1
+     b54:	4f 1a       	sub	r4, r31
+     b56:	51 08       	sbc	r5, r1
+     b58:	61 08       	sbc	r6, r1
+     b5a:	71 08       	sbc	r7, r1
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:524
+        start += 1000;
+     b5c:	c8 51       	subi	r28, 0x18	; 24
+     b5e:	dc 4f       	sbci	r29, 0xFC	; 252
+     b60:	ca cf       	rjmp	.-108    	; 0xaf6 <main+0x170>
+/home/slb/.arduino15/packages/ATTinyCore/hardware/avr/1.5.2/cores/tiny/wiring.c:520
+  void delay(unsigned long ms)
+  {
+    #if (F_CPU>=1000000L)
+    uint16_t start = (uint16_t)micros();
+
+    while (ms > 0) {
+     b62:	41 14       	cp	r4, r1
+     b64:	51 04       	cpc	r5, r1
+     b66:	61 04       	cpc	r6, r1
+     b68:	71 04       	cpc	r7, r1
+     b6a:	29 f6       	brne	.-118    	; 0xaf6 <main+0x170>
+     b6c:	cf cf       	rjmp	.-98     	; 0xb0c <main+0x186>
+animRingsEyeBlink():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:496
+    return;
+
+  // ---- timing gate ----
+  if (++blinkTick < BLINK_STEP_TICKS)
+    return;
+  blinkTick = 0;
+     b6e:	10 92 ca 00 	sts	0x00CA, r1	; 0x8000ca <blinkTick>
+main():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:498
+
+  uint32_t colour = rings.Color(
+     b72:	80 e4       	ldi	r24, 0x40	; 64
+animRingsEyeBlink():
+     b74:	c1 30       	cpi	r28, 0x01	; 1
+     b76:	d1 05       	cpc	r29, r1
+     b78:	09 f4       	brne	.+2      	; 0xb7c <main+0x1f6>
+main():
+     b7a:	88 ec       	ldi	r24, 0xC8	; 200
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     b7c:	90 e0       	ldi	r25, 0x00	; 0
+     b7e:	b0 e0       	ldi	r27, 0x00	; 0
+     b80:	a0 e0       	ldi	r26, 0x00	; 0
+     b82:	3c 01       	movw	r6, r24
+     b84:	55 24       	eor	r5, r5
+     b86:	44 24       	eor	r4, r4
+     b88:	8a e0       	ldi	r24, 0x0A	; 10
+     b8a:	58 2a       	or	r5, r24
+animRingsEyeBlink():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:501
+        (currentMode == MODE_STOP) ? STOP_BRIGHTNESS : IDLE_MAX_BRIGHTNESS, 10, 0);
+
+  int8_t level = blinkOrder[blinkIndex];
+     b8c:	90 90 cc 00 	lds	r9, 0x00CC	; 0x8000cc <blinkIndex>
+     b90:	e9 2d       	mov	r30, r9
+     b92:	09 2c       	mov	r0, r9
+     b94:	00 0c       	add	r0, r0
+     b96:	ff 0b       	sbc	r31, r31
+     b98:	ec 56       	subi	r30, 0x6C	; 108
+     b9a:	ff 4f       	sbci	r31, 0xFF	; 255
+     b9c:	20 80       	ld	r2, Z
+     b9e:	37 e6       	ldi	r19, 0x67	; 103
+     ba0:	c3 2e       	mov	r12, r19
+     ba2:	30 e0       	ldi	r19, 0x00	; 0
+     ba4:	d3 2e       	mov	r13, r19
+     ba6:	10 e0       	ldi	r17, 0x00	; 0
+     ba8:	00 e0       	ldi	r16, 0x00	; 0
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:504
+
+  for (uint8_t i = 0; i < RING_LEDS; i++) {
+    if (ledY[i] == level) {
+     baa:	f6 01       	movw	r30, r12
+     bac:	81 91       	ld	r24, Z+
+     bae:	6f 01       	movw	r12, r30
+     bb0:	30 90 cb 00 	lds	r3, 0x00CB	; 0x8000cb <blinkOpening>
+     bb4:	28 12       	cpse	r2, r24
+     bb6:	0c c0       	rjmp	.+24     	; 0xbd0 <main+0x24a>
+main():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:505
+      rings.setPixelColor(i, blinkOpening ? colour : 0);
+     bb8:	92 01       	movw	r18, r4
+     bba:	a3 01       	movw	r20, r6
+animRingsEyeBlink():
+     bbc:	31 10       	cpse	r3, r1
+     bbe:	04 c0       	rjmp	.+8      	; 0xbc8 <main+0x242>
+main():
+     bc0:	20 e0       	ldi	r18, 0x00	; 0
+     bc2:	30 e0       	ldi	r19, 0x00	; 0
+     bc4:	40 e0       	ldi	r20, 0x00	; 0
+     bc6:	50 e0       	ldi	r21, 0x00	; 0
+animRingsEyeBlink():
+     bc8:	b8 01       	movw	r22, r16
+     bca:	83 ee       	ldi	r24, 0xE3	; 227
+     bcc:	90 e0       	ldi	r25, 0x00	; 0
+     bce:	4a db       	rcall	.-2412   	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     bd0:	0f 5f       	subi	r16, 0xFF	; 255
+     bd2:	1f 4f       	sbci	r17, 0xFF	; 255
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:503
+  uint32_t colour = rings.Color(
+        (currentMode == MODE_STOP) ? STOP_BRIGHTNESS : IDLE_MAX_BRIGHTNESS, 10, 0);
+
+  int8_t level = blinkOrder[blinkIndex];
+
+  for (uint8_t i = 0; i < RING_LEDS; i++) {
+     bd4:	0d 32       	cpi	r16, 0x2D	; 45
+     bd6:	11 05       	cpc	r17, r1
+     bd8:	41 f7       	brne	.-48     	; 0xbaa <main+0x224>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:509
+    if (ledY[i] == level) {
+      rings.setPixelColor(i, blinkOpening ? colour : 0);
+    }
+  }
+
+  ringsDirty = true;
+     bda:	80 92 f8 00 	sts	0x00F8, r8	; 0x8000f8 <ringsDirty>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:512
+
+  // ---- advance ----
+  if (!blinkOpening) {
+     bde:	31 10       	cpse	r3, r1
+     be0:	0d c0       	rjmp	.+26     	; 0xbfc <main+0x276>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:513
+    if (blinkIndex < BLINK_STEPS - 1) {
+     be2:	f5 e0       	ldi	r31, 0x05	; 5
+     be4:	f9 15       	cp	r31, r9
+     be6:	3c f0       	brlt	.+14     	; 0xbf6 <main+0x270>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:514
+      blinkIndex++;
+     be8:	93 94       	inc	r9
+     bea:	90 92 cc 00 	sts	0x00CC, r9	; 0x8000cc <blinkIndex>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:732
+  // ---------- PLATE ----------
+//  if (ringEmergState == RING_EMERG_ACTIVE) {
+//    animPlateEmergTrail();   // or animPlateIdleOverlay(), etc.
+//  }
+//  else {
+    switch (currentMode) {
+     bee:	21 97       	sbiw	r28, 0x01	; 1
+     bf0:	09 f0       	breq	.+2      	; 0xbf4 <main+0x26e>
+     bf2:	76 c0       	rjmp	.+236    	; 0xce0 <main+0x35a>
+     bf4:	97 c0       	rjmp	.+302    	; 0xd24 <main+0x39e>
+animRingsEyeBlink():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:517
+  if (!blinkOpening) {
+    if (blinkIndex < BLINK_STEPS - 1) {
+      blinkIndex++;
+    } else {
+      // we have already rendered the last step
+      blinkOpening = true;
+     bf6:	80 92 cb 00 	sts	0x00CB, r8	; 0x8000cb <blinkOpening>
+     bfa:	f9 cf       	rjmp	.-14     	; 0xbee <main+0x268>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:520
+    }
+  } else {
+    blinkIndex--;
+     bfc:	9a 94       	dec	r9
+     bfe:	90 92 cc 00 	sts	0x00CC, r9	; 0x8000cc <blinkIndex>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:521
+    if (blinkIndex < 0) {
+     c02:	97 fe       	sbrs	r9, 7
+     c04:	99 cf       	rjmp	.-206    	; 0xb38 <main+0x1b2>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:522
+      blinkState = BLINK_IDLE;
+     c06:	10 92 fc 00 	sts	0x00FC, r1	; 0x8000fc <blinkState+0x1>
+     c0a:	10 92 fb 00 	sts	0x00FB, r1	; 0x8000fb <blinkState>
+     c0e:	ef cf       	rjmp	.-34     	; 0xbee <main+0x268>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:705
+//  }
+//  else 
+  if ((blinkState == BLINK_ACTIVE) && (currentMode == MODE_IDLE || currentMode == MODE_STOP)) {
+      animRingsEyeBlink();
+  } else {
+    switch (currentMode) {
+     c10:	c4 30       	cpi	r28, 0x04	; 4
+     c12:	d1 05       	cpc	r29, r1
+     c14:	f0 f5       	brcc	.+124    	; 0xc92 <main+0x30c>
+     c16:	c2 30       	cpi	r28, 0x02	; 2
+     c18:	d1 05       	cpc	r29, r1
+     c1a:	08 f0       	brcs	.+2      	; 0xc1e <main+0x298>
+     c1c:	86 c0       	rjmp	.+268    	; 0xd2a <main+0x3a4>
+     c1e:	20 97       	sbiw	r28, 0x00	; 0
+     c20:	09 f4       	brne	.+2      	; 0xc24 <main+0x29e>
+     c22:	5c c0       	rjmp	.+184    	; 0xcdc <main+0x356>
+     c24:	21 97       	sbiw	r28, 0x01	; 1
+     c26:	09 f4       	brne	.+2      	; 0xc2a <main+0x2a4>
+     c28:	5f c0       	rjmp	.+190    	; 0xce8 <main+0x362>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:760
+//  }
+
+  // ---------- TRIGGER BLINK ----------
+  static uint16_t blinkIntervalTick = 0;
+
+  if (blinkState == BLINK_IDLE) {
+     c2a:	80 91 fb 00 	lds	r24, 0x00FB	; 0x8000fb <blinkState>
+     c2e:	90 91 fc 00 	lds	r25, 0x00FC	; 0x8000fc <blinkState+0x1>
+     c32:	89 2b       	or	r24, r25
+     c34:	71 f4       	brne	.+28     	; 0xc52 <main+0x2cc>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:761
+    if (++blinkIntervalTick >= BLINK_INTERVAL_TICKS) {
+     c36:	80 91 f9 00 	lds	r24, 0x00F9	; 0x8000f9 <updateAnimation()::blinkIntervalTick>
+     c3a:	90 91 fa 00 	lds	r25, 0x00FA	; 0x8000fa <updateAnimation()::blinkIntervalTick+0x1>
+     c3e:	01 96       	adiw	r24, 0x01	; 1
+     c40:	84 3f       	cpi	r24, 0xF4	; 244
+     c42:	21 e0       	ldi	r18, 0x01	; 1
+     c44:	92 07       	cpc	r25, r18
+     c46:	08 f0       	brcs	.+2      	; 0xc4a <main+0x2c4>
+     c48:	7f c0       	rjmp	.+254    	; 0xd48 <main+0x3c2>
+     c4a:	90 93 fa 00 	sts	0x00FA, r25	; 0x8000fa <updateAnimation()::blinkIntervalTick+0x1>
+     c4e:	80 93 f9 00 	sts	0x00F9, r24	; 0x8000f9 <updateAnimation()::blinkIntervalTick>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:768
+      startEyeBlink();
+    }
+  }
+
+  // ---------- FLUSH ----------
+  if (ringsDirty) {
+     c52:	80 91 f8 00 	lds	r24, 0x00F8	; 0x8000f8 <ringsDirty>
+     c56:	88 23       	and	r24, r24
+     c58:	59 f0       	breq	.+22     	; 0xc70 <main+0x2ea>
+show():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:260
+           specialized alternative or companion libraries exist that use
+           very device-specific peripherals to work around it.
+*/
+void Adafruit_NeoPixel::show(void) {
+
+  if (!pixels)
+     c5a:	80 91 eb 00 	lds	r24, 0x00EB	; 0x8000eb <rings+0x8>
+     c5e:	90 91 ec 00 	lds	r25, 0x00EC	; 0x8000ec <rings+0x9>
+     c62:	89 2b       	or	r24, r25
+     c64:	19 f0       	breq	.+6      	; 0xc6c <main+0x2e6>
+     c66:	83 ee       	ldi	r24, 0xE3	; 227
+     c68:	90 e0       	ldi	r25, 0x00	; 0
+     c6a:	6e da       	rcall	.-2852   	; 0x148 <Adafruit_NeoPixel::show() [clone .part.2]>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:770
+    rings.show();
+    ringsDirty = false;
+     c6c:	10 92 f8 00 	sts	0x00F8, r1	; 0x8000f8 <ringsDirty>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:773
+  }
+
+  if (plateDirty) {
+     c70:	80 91 e2 00 	lds	r24, 0x00E2	; 0x8000e2 <plateDirty>
+     c74:	88 23       	and	r24, r24
+     c76:	09 f4       	brne	.+2      	; 0xc7a <main+0x2f4>
+     c78:	bb ce       	rjmp	.-650    	; 0x9f0 <main+0x6a>
+show():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:260
+     c7a:	80 91 d5 00 	lds	r24, 0x00D5	; 0x8000d5 <plate+0x8>
+     c7e:	90 91 d6 00 	lds	r25, 0x00D6	; 0x8000d6 <plate+0x9>
+     c82:	89 2b       	or	r24, r25
+     c84:	19 f0       	breq	.+6      	; 0xc8c <main+0x306>
+     c86:	8d ec       	ldi	r24, 0xCD	; 205
+     c88:	90 e0       	ldi	r25, 0x00	; 0
+     c8a:	5e da       	rcall	.-2884   	; 0x148 <Adafruit_NeoPixel::show() [clone .part.2]>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:775
+    plate.show();
+    plateDirty = false;
+     c8c:	10 92 e2 00 	sts	0x00E2, r1	; 0x8000e2 <plateDirty>
+     c90:	af ce       	rjmp	.-674    	; 0x9f0 <main+0x6a>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:705
+//  }
+//  else 
+  if ((blinkState == BLINK_ACTIVE) && (currentMode == MODE_IDLE || currentMode == MODE_STOP)) {
+      animRingsEyeBlink();
+  } else {
+    switch (currentMode) {
+     c92:	24 97       	sbiw	r28, 0x04	; 4
+     c94:	51 f6       	brne	.-108    	; 0xc2a <main+0x2a4>
+animRingsEmergency():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:431
+
+  ringsDirty = true;
+}
+
+void animRingsEmergency(uint16_t animTick) {
+  uint8_t phase = (animTick / RINGS_EMERG_DELAY) & 1;
+     c96:	c8 01       	movw	r24, r16
+     c98:	62 e3       	ldi	r22, 0x32	; 50
+     c9a:	70 e0       	ldi	r23, 0x00	; 0
+     c9c:	d8 d0       	rcall	.+432    	; 0xe4e <__udivmodhi4>
+main():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:432
+  uint8_t val = phase ? 0 : 55;
+     c9e:	80 e0       	ldi	r24, 0x00	; 0
+animRingsEmergency():
+     ca0:	60 ff       	sbrs	r22, 0
+main():
+     ca2:	87 e3       	ldi	r24, 0x37	; 55
+animRingsEmergency():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:434
+
+  uint32_t colour = rings.Color(val, val / 4, 0);
+     ca4:	98 2f       	mov	r25, r24
+     ca6:	96 95       	lsr	r25
+     ca8:	96 95       	lsr	r25
+_ZN17Adafruit_NeoPixel5ColorEhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.h:338
+     caa:	48 2e       	mov	r4, r24
+     cac:	51 2c       	mov	r5, r1
+     cae:	71 2c       	mov	r7, r1
+     cb0:	61 2c       	mov	r6, r1
+     cb2:	32 01       	movw	r6, r4
+     cb4:	55 24       	eor	r5, r5
+     cb6:	44 24       	eor	r4, r4
+     cb8:	59 2a       	or	r5, r25
+     cba:	d0 e0       	ldi	r29, 0x00	; 0
+     cbc:	c0 e0       	ldi	r28, 0x00	; 0
+animRingsEmergency():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:437
+
+  for (uint8_t i = 0; i < RING_LEDS; i++)
+    rings.setPixelColor(i, colour);
+     cbe:	a3 01       	movw	r20, r6
+     cc0:	92 01       	movw	r18, r4
+     cc2:	be 01       	movw	r22, r28
+     cc4:	83 ee       	ldi	r24, 0xE3	; 227
+     cc6:	90 e0       	ldi	r25, 0x00	; 0
+     cc8:	cd da       	rcall	.-2662   	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     cca:	21 96       	adiw	r28, 0x01	; 1
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:436
+  uint8_t phase = (animTick / RINGS_EMERG_DELAY) & 1;
+  uint8_t val = phase ? 0 : 55;
+
+  uint32_t colour = rings.Color(val, val / 4, 0);
+
+  for (uint8_t i = 0; i < RING_LEDS; i++)
+     ccc:	cd 32       	cpi	r28, 0x2D	; 45
+     cce:	d1 05       	cpc	r29, r1
+     cd0:	b1 f7       	brne	.-20     	; 0xcbe <main+0x338>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:439
+    rings.setPixelColor(i, colour);
+
+  ringsDirty = true;
+     cd2:	80 92 f8 00 	sts	0x00F8, r8	; 0x8000f8 <ringsDirty>
+animPlateEmergDoubleTrail():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:562
+void animPlateIdleTrail()  { renderPlateTrailEx(PLATE_IDLE); }
+void animPlateStopTrail()  { renderPlateTrailEx(PLATE_STOP); }
+void animPlateLeftTrail()  { renderPlateTrailEx(PLATE_LEFT); }
+void animPlateRightTrail() { renderPlateTrailEx(PLATE_RIGHT); }
+void animPlateEmergTrail() { renderPlateTrailEx(PLATE_EMERG); }
+void animPlateEmergDoubleTrail() { renderPlateTrailEx(PLATE_EMERG_DOUBLE); }
+     cd6:	8b eb       	ldi	r24, 0xBB	; 187
+     cd8:	90 e0       	ldi	r25, 0x00	; 0
+     cda:	04 c0       	rjmp	.+8      	; 0xce4 <main+0x35e>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:708
+      animRingsEyeBlink();
+  } else {
+    switch (currentMode) {
+
+      case MODE_IDLE:
+        animRingsIdle(animTick);
+     cdc:	c8 01       	movw	r24, r16
+     cde:	32 db       	rcall	.-2460   	; 0x344 <animRingsIdle(unsigned int)>
+animPlateIdleTrail():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:557
+static const PlateTrailProfile PLATE_LEFT  = { -1, false, 255, 80, 0, 0, 0, 0 };
+static const PlateTrailProfile PLATE_RIGHT = { +1, false, 255, 80, 0, 0, 0, 0 };
+static const PlateTrailProfile PLATE_EMERG = { +1, true,  255, 80, 0, 0, 0, 0 };
+static const PlateTrailProfile PLATE_EMERG_DOUBLE = { 0, false, 255, 80, 0, 0, 0, 0 };
+
+void animPlateIdleTrail()  { renderPlateTrailEx(PLATE_IDLE); }
+     ce0:	8b e9       	ldi	r24, 0x9B	; 155
+     ce2:	90 e0       	ldi	r25, 0x00	; 0
+animPlateEmergDoubleTrail():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:562
+void animPlateStopTrail()  { renderPlateTrailEx(PLATE_STOP); }
+void animPlateLeftTrail()  { renderPlateTrailEx(PLATE_LEFT); }
+void animPlateRightTrail() { renderPlateTrailEx(PLATE_RIGHT); }
+void animPlateEmergTrail() { renderPlateTrailEx(PLATE_EMERG); }
+void animPlateEmergDoubleTrail() { renderPlateTrailEx(PLATE_EMERG_DOUBLE); }
+     ce4:	7b db       	rcall	.-2314   	; 0x3dc <renderPlateTrailEx(PlateTrailProfile const&)>
+     ce6:	a1 cf       	rjmp	.-190    	; 0xc2a <main+0x2a4>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:705
+//  }
+//  else 
+  if ((blinkState == BLINK_ACTIVE) && (currentMode == MODE_IDLE || currentMode == MODE_STOP)) {
+      animRingsEyeBlink();
+  } else {
+    switch (currentMode) {
+     ce8:	d0 e0       	ldi	r29, 0x00	; 0
+     cea:	c0 e0       	ldi	r28, 0x00	; 0
+fillRings():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:223
+  if (start > end) return;
+
+  uint32_t colour = rings.Color(r, g, b);
+
+  for (uint8_t i = start; i <= end; i++) {
+    rings.setPixelColor(i, colour);
+     cec:	20 e0       	ldi	r18, 0x00	; 0
+     cee:	35 e0       	ldi	r19, 0x05	; 5
+     cf0:	48 ec       	ldi	r20, 0xC8	; 200
+     cf2:	50 e0       	ldi	r21, 0x00	; 0
+     cf4:	be 01       	movw	r22, r28
+     cf6:	83 ee       	ldi	r24, 0xE3	; 227
+     cf8:	90 e0       	ldi	r25, 0x00	; 0
+     cfa:	b4 da       	rcall	.-2712   	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     cfc:	21 96       	adiw	r28, 0x01	; 1
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:222
+  if (end   >= RING_LEDS) end = RING_LEDS - 1;
+  if (start > end) return;
+
+  uint32_t colour = rings.Color(r, g, b);
+
+  for (uint8_t i = start; i <= end; i++) {
+     cfe:	c3 32       	cpi	r28, 0x23	; 35
+     d00:	d1 05       	cpc	r29, r1
+     d02:	a1 f7       	brne	.-24     	; 0xcec <main+0x366>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:226
+    rings.setPixelColor(i, colour);
+  }
+
+  ringsDirty = true;
+     d04:	80 92 f8 00 	sts	0x00F8, r8	; 0x8000f8 <ringsDirty>
+     d08:	c3 e2       	ldi	r28, 0x23	; 35
+     d0a:	d0 e0       	ldi	r29, 0x00	; 0
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:223
+  if (start > end) return;
+
+  uint32_t colour = rings.Color(r, g, b);
+
+  for (uint8_t i = start; i <= end; i++) {
+    rings.setPixelColor(i, colour);
+     d0c:	20 e0       	ldi	r18, 0x00	; 0
+     d0e:	35 e0       	ldi	r19, 0x05	; 5
+     d10:	4f ef       	ldi	r20, 0xFF	; 255
+     d12:	50 e0       	ldi	r21, 0x00	; 0
+     d14:	be 01       	movw	r22, r28
+     d16:	83 ee       	ldi	r24, 0xE3	; 227
+     d18:	90 e0       	ldi	r25, 0x00	; 0
+     d1a:	a4 da       	rcall	.-2744   	; 0x264 <Adafruit_NeoPixel::setPixelColor(unsigned int, unsigned long)>
+     d1c:	21 96       	adiw	r28, 0x01	; 1
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:222
+  if (end   >= RING_LEDS) end = RING_LEDS - 1;
+  if (start > end) return;
+
+  uint32_t colour = rings.Color(r, g, b);
+
+  for (uint8_t i = start; i <= end; i++) {
+     d1e:	cd 32       	cpi	r28, 0x2D	; 45
+     d20:	d1 05       	cpc	r29, r1
+     d22:	a1 f7       	brne	.-24     	; 0xd0c <main+0x386>
+animPlateStopTrail():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:558
+static const PlateTrailProfile PLATE_RIGHT = { +1, false, 255, 80, 0, 0, 0, 0 };
+static const PlateTrailProfile PLATE_EMERG = { +1, true,  255, 80, 0, 0, 0, 0 };
+static const PlateTrailProfile PLATE_EMERG_DOUBLE = { 0, false, 255, 80, 0, 0, 0, 0 };
+
+void animPlateIdleTrail()  { renderPlateTrailEx(PLATE_IDLE); }
+void animPlateStopTrail()  { renderPlateTrailEx(PLATE_STOP); }
+     d24:	83 ea       	ldi	r24, 0xA3	; 163
+     d26:	90 e0       	ldi	r25, 0x00	; 0
+     d28:	dd cf       	rjmp	.-70     	; 0xce4 <main+0x35e>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:718
+        break;
+
+      case MODE_LEFT:
+      case MODE_RIGHT:
+        //animRingsTurn(animTick);
+        animRingsIdle(animTick);
+     d2a:	c8 01       	movw	r24, r16
+     d2c:	0b db       	rcall	.-2538   	; 0x344 <animRingsIdle(unsigned int)>
+     d2e:	04 cf       	rjmp	.-504    	; 0xb38 <main+0x1b2>
+animPlateRightTrail():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:560
+static const PlateTrailProfile PLATE_EMERG_DOUBLE = { 0, false, 255, 80, 0, 0, 0, 0 };
+
+void animPlateIdleTrail()  { renderPlateTrailEx(PLATE_IDLE); }
+void animPlateStopTrail()  { renderPlateTrailEx(PLATE_STOP); }
+void animPlateLeftTrail()  { renderPlateTrailEx(PLATE_LEFT); }
+void animPlateRightTrail() { renderPlateTrailEx(PLATE_RIGHT); }
+     d30:	83 eb       	ldi	r24, 0xB3	; 179
+     d32:	90 e0       	ldi	r25, 0x00	; 0
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:732
+  // ---------- PLATE ----------
+//  if (ringEmergState == RING_EMERG_ACTIVE) {
+//    animPlateEmergTrail();   // or animPlateIdleOverlay(), etc.
+//  }
+//  else {
+    switch (currentMode) {
+     d34:	c3 30       	cpi	r28, 0x03	; 3
+     d36:	d1 05       	cpc	r29, r1
+     d38:	a9 f2       	breq	.-86     	; 0xce4 <main+0x35e>
+     d3a:	24 97       	sbiw	r28, 0x04	; 4
+     d3c:	09 f0       	breq	.+2      	; 0xd40 <main+0x3ba>
+     d3e:	75 cf       	rjmp	.-278    	; 0xc2a <main+0x2a4>
+     d40:	ca cf       	rjmp	.-108    	; 0xcd6 <main+0x350>
+animPlateLeftTrail():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:559
+static const PlateTrailProfile PLATE_EMERG = { +1, true,  255, 80, 0, 0, 0, 0 };
+static const PlateTrailProfile PLATE_EMERG_DOUBLE = { 0, false, 255, 80, 0, 0, 0, 0 };
+
+void animPlateIdleTrail()  { renderPlateTrailEx(PLATE_IDLE); }
+void animPlateStopTrail()  { renderPlateTrailEx(PLATE_STOP); }
+void animPlateLeftTrail()  { renderPlateTrailEx(PLATE_LEFT); }
+     d42:	8b ea       	ldi	r24, 0xAB	; 171
+     d44:	90 e0       	ldi	r25, 0x00	; 0
+     d46:	ce cf       	rjmp	.-100    	; 0xce4 <main+0x35e>
+updateAnimation():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:762
+  // ---------- TRIGGER BLINK ----------
+  static uint16_t blinkIntervalTick = 0;
+
+  if (blinkState == BLINK_IDLE) {
+    if (++blinkIntervalTick >= BLINK_INTERVAL_TICKS) {
+      blinkIntervalTick = 0;
+     d48:	10 92 fa 00 	sts	0x00FA, r1	; 0x8000fa <updateAnimation()::blinkIntervalTick+0x1>
+     d4c:	10 92 f9 00 	sts	0x00F9, r1	; 0x8000f9 <updateAnimation()::blinkIntervalTick>
+startEyeBlink():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:539
+  }
+
+  ringsDirty = true;
+  */
+
+  blinkIndex = 0;
+     d50:	10 92 cc 00 	sts	0x00CC, r1	; 0x8000cc <blinkIndex>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:540
+  blinkOpening = false;
+     d54:	10 92 cb 00 	sts	0x00CB, r1	; 0x8000cb <blinkOpening>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:541
+  blinkTick = 0;
+     d58:	10 92 ca 00 	sts	0x00CA, r1	; 0x8000ca <blinkTick>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:542
+  blinkState = BLINK_ACTIVE;
+     d5c:	f0 92 fc 00 	sts	0x00FC, r15	; 0x8000fc <blinkState+0x1>
+     d60:	e0 92 fb 00 	sts	0x00FB, r14	; 0x8000fb <blinkState>
+     d64:	76 cf       	rjmp	.-276    	; 0xc52 <main+0x2cc>
+setMode():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:666
+}
+*/
+
+// ---------------- MODE MGMT ----------------
+void setMode(Mode m) {
+  if (m != currentMode) {
+     d66:	45 2b       	or	r20, r21
+     d68:	09 f4       	brne	.+2      	; 0xd6c <main+0x3e6>
+     d6a:	ae ce       	rjmp	.-676    	; 0xac8 <main+0x142>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:667
+    currentMode = m;
+     d6c:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <currentMode+0x1>
+     d70:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <currentMode>
+     d74:	a9 ce       	rjmp	.-686    	; 0xac8 <main+0x142>
+
+00000d76 <_GLOBAL__sub_I__Z9fillRingshhhhh>:
+_GLOBAL__sub_I__Z9fillRingshhhhh():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:167
+  /* 40 */ 4, /* 41 */ 4, /* 42 */ 4, /* 43 */ 4, /* 44 */ 4
+};
+
+
+// ---------------- LED STRIPS ----------------
+static Adafruit_NeoPixel rings(RING_LEDS, RINGS_PIN, NEO_GRB + NEO_KHZ800);
+     d76:	50 e0       	ldi	r21, 0x00	; 0
+     d78:	40 e0       	ldi	r20, 0x00	; 0
+     d7a:	6d e2       	ldi	r22, 0x2D	; 45
+     d7c:	70 e0       	ldi	r23, 0x00	; 0
+     d7e:	83 ee       	ldi	r24, 0xE3	; 227
+     d80:	90 e0       	ldi	r25, 0x00	; 0
+     d82:	ab dd       	rcall	.-1194   	; 0x8da <Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, int, unsigned char) [clone .constprop.2]>
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:168
+static Adafruit_NeoPixel plate(PLATE_LEDS, PLATE_PIN, NEO_GRB + NEO_KHZ800);
+     d84:	44 e0       	ldi	r20, 0x04	; 4
+     d86:	50 e0       	ldi	r21, 0x00	; 0
+     d88:	6a e0       	ldi	r22, 0x0A	; 10
+     d8a:	70 e0       	ldi	r23, 0x00	; 0
+     d8c:	8d ec       	ldi	r24, 0xCD	; 205
+     d8e:	90 e0       	ldi	r25, 0x00	; 0
+     d90:	a4 cd       	rjmp	.-1208   	; 0x8da <Adafruit_NeoPixel::Adafruit_NeoPixel(unsigned int, int, unsigned char) [clone .constprop.2]>
+
+00000d92 <_GLOBAL__sub_D__Z9fillRingshhhhh>:
+_GLOBAL__sub_D__Z9fillRingshhhhh():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:120
+
+/*!
+  @brief   Deallocate Adafruit_NeoPixel object, set data pin back to INPUT.
+*/
+Adafruit_NeoPixel::~Adafruit_NeoPixel() {
+  free(pixels);
+     d92:	80 91 d5 00 	lds	r24, 0x00D5	; 0x8000d5 <plate+0x8>
+     d96:	90 91 d6 00 	lds	r25, 0x00D6	; 0x8000d6 <plate+0x9>
+     d9a:	31 d1       	rcall	.+610    	; 0xffe <free>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:121
+  if (pin >= 0)
+     d9c:	80 91 d2 00 	lds	r24, 0x00D2	; 0x8000d2 <plate+0x5>
+     da0:	90 91 d3 00 	lds	r25, 0x00D3	; 0x8000d3 <plate+0x6>
+     da4:	97 fd       	sbrc	r25, 7
+     da6:	02 c0       	rjmp	.+4      	; 0xdac <_GLOBAL__sub_D__Z9fillRingshhhhh+0x1a>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:122
+    pinMode(pin, INPUT);
+     da8:	60 e0       	ldi	r22, 0x00	; 0
+     daa:	07 dd       	rcall	.-1522   	; 0x7ba <pinMode>
+__base_dtor ():
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:120
+
+/*!
+  @brief   Deallocate Adafruit_NeoPixel object, set data pin back to INPUT.
+*/
+Adafruit_NeoPixel::~Adafruit_NeoPixel() {
+  free(pixels);
+     dac:	80 91 eb 00 	lds	r24, 0x00EB	; 0x8000eb <rings+0x8>
+     db0:	90 91 ec 00 	lds	r25, 0x00EC	; 0x8000ec <rings+0x9>
+     db4:	24 d1       	rcall	.+584    	; 0xffe <free>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:121
+  if (pin >= 0)
+     db6:	80 91 e8 00 	lds	r24, 0x00E8	; 0x8000e8 <rings+0x5>
+     dba:	90 91 e9 00 	lds	r25, 0x00E9	; 0x8000e9 <rings+0x6>
+     dbe:	97 fd       	sbrc	r25, 7
+     dc0:	02 c0       	rjmp	.+4      	; 0xdc6 <_GLOBAL__sub_D__Z9fillRingshhhhh+0x34>
+/home/slb/Documents/Arduino/libraries/Adafruit_NeoPixel/Adafruit_NeoPixel.cpp:122
+    pinMode(pin, INPUT);
+     dc2:	60 e0       	ldi	r22, 0x00	; 0
+     dc4:	fa cc       	rjmp	.-1548   	; 0x7ba <pinMode>
+_GLOBAL__sub_D__Z9fillRingshhhhh():
+/usr/local/src/slabua/zr7-taillight/firmware/zr7-taillight-attiny85/zr7-taillight-attiny85.ino:863
+    setMode(MODE_RIGHT);
+  else
+    setMode(MODE_IDLE);
+
+  updateAnimation();
+}
+     dc6:	08 95       	ret
+
+00000dc8 <__mulhi3>:
+__mulhi3():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:312
+     dc8:	00 24       	eor	r0, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:313
+     dca:	55 27       	eor	r21, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:314
+     dcc:	04 c0       	rjmp	.+8      	; 0xdd6 <__mulhi3+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:317
+     dce:	08 0e       	add	r0, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:318
+     dd0:	59 1f       	adc	r21, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:320
+     dd2:	88 0f       	add	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:321
+     dd4:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:324
+     dd6:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:325
+     dd8:	29 f0       	breq	.+10     	; 0xde4 <__mulhi3+0x1c>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:328
+     dda:	76 95       	lsr	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:329
+     ddc:	67 95       	ror	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:331
+     dde:	b8 f3       	brcs	.-18     	; 0xdce <__mulhi3+0x6>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:335
+     de0:	71 05       	cpc	r23, r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:337
+     de2:	b9 f7       	brne	.-18     	; 0xdd2 <__mulhi3+0xa>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:340
+     de4:	80 2d       	mov	r24, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:341
+     de6:	95 2f       	mov	r25, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:342
+     de8:	08 95       	ret
+
+00000dea <__mulsi3>:
+__mulsi3():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:445
+     dea:	ee 27       	eor	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:446
+     dec:	ff 27       	eor	r31, r31
+
+00000dee <__mulsi3_helper>:
+__mulsi3_helper():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:451
+     dee:	aa 27       	eor	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:452
+     df0:	bb 27       	eor	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:453
+     df2:	08 c0       	rjmp	.+16     	; 0xe04 <__mulsi3_helper+0x16>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:457
+     df4:	a2 0f       	add	r26, r18
+     df6:	b3 1f       	adc	r27, r19
+     df8:	e4 1f       	adc	r30, r20
+     dfa:	f5 1f       	adc	r31, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:460
+     dfc:	22 0f       	add	r18, r18
+     dfe:	33 1f       	adc	r19, r19
+     e00:	44 1f       	adc	r20, r20
+     e02:	55 1f       	adc	r21, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:463
+     e04:	96 95       	lsr	r25
+     e06:	87 95       	ror	r24
+     e08:	77 95       	ror	r23
+     e0a:	67 95       	ror	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:465
+     e0c:	98 f3       	brcs	.-26     	; 0xdf4 <__mulsi3_helper+0x6>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:467
+     e0e:	70 40       	sbci	r23, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:468
+     e10:	a9 f7       	brne	.-22     	; 0xdfc <__mulsi3_helper+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:469
+     e12:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:470
+     e14:	99 f7       	brne	.-26     	; 0xdfc <__mulsi3_helper+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:473
+     e16:	bd 01       	movw	r22, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:474
+     e18:	cf 01       	movw	r24, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:480
+     e1a:	08 95       	ret
+
+00000e1c <__udivmodqi4>:
+__udivmodqi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1346
+     e1c:	99 1b       	sub	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1347
+     e1e:	79 e0       	ldi	r23, 0x09	; 9
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1348
+     e20:	04 c0       	rjmp	.+8      	; 0xe2a <__udivmodqi4_ep>
+
+00000e22 <__udivmodqi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1350
+     e22:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1351
+     e24:	96 17       	cp	r25, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1352
+     e26:	08 f0       	brcs	.+2      	; 0xe2a <__udivmodqi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1353
+     e28:	96 1b       	sub	r25, r22
+
+00000e2a <__udivmodqi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1355
+     e2a:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1356
+     e2c:	7a 95       	dec	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1357
+     e2e:	c9 f7       	brne	.-14     	; 0xe22 <__udivmodqi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1358
+     e30:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1360
+     e32:	08 95       	ret
+
+00000e34 <__divmodqi4>:
+__divmodqi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1366
+     e34:	87 fb       	bst	r24, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1367
+     e36:	08 2e       	mov	r0, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1368
+     e38:	06 26       	eor	r0, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1369
+     e3a:	87 fd       	sbrc	r24, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1370
+     e3c:	81 95       	neg	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1371
+     e3e:	67 fd       	sbrc	r22, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1372
+     e40:	61 95       	neg	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1373
+     e42:	ec df       	rcall	.-40     	; 0xe1c <__udivmodqi4>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1374
+     e44:	0e f4       	brtc	.+2      	; 0xe48 <__divmodqi4_1>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1375
+     e46:	91 95       	neg	r25
+
+00000e48 <__divmodqi4_1>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1377
+     e48:	07 fc       	sbrc	r0, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1378
+     e4a:	81 95       	neg	r24
+
+00000e4c <__divmodqi4_exit>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1380
+     e4c:	08 95       	ret
+
+00000e4e <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+     e4e:	aa 1b       	sub	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+     e50:	bb 1b       	sub	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+     e52:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+     e54:	07 c0       	rjmp	.+14     	; 0xe64 <__udivmodhi4_ep>
+
+00000e56 <__udivmodhi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+     e56:	aa 1f       	adc	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+     e58:	bb 1f       	adc	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+     e5a:	a6 17       	cp	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+     e5c:	b7 07       	cpc	r27, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+     e5e:	10 f0       	brcs	.+4      	; 0xe64 <__udivmodhi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+     e60:	a6 1b       	sub	r26, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+     e62:	b7 0b       	sbc	r27, r23
+
+00000e64 <__udivmodhi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+     e64:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+     e66:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+     e68:	5a 95       	dec	r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+     e6a:	a9 f7       	brne	.-22     	; 0xe56 <__udivmodhi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+     e6c:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+     e6e:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+     e70:	bc 01       	movw	r22, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+     e72:	cd 01       	movw	r24, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+     e74:	08 95       	ret
+
+00000e76 <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+     e76:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+     e78:	1a 2e       	mov	r1, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+     e7a:	aa 1b       	sub	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+     e7c:	bb 1b       	sub	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+     e7e:	fd 01       	movw	r30, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+     e80:	0d c0       	rjmp	.+26     	; 0xe9c <__udivmodsi4_ep>
+
+00000e82 <__udivmodsi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+     e82:	aa 1f       	adc	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+     e84:	bb 1f       	adc	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+     e86:	ee 1f       	adc	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+     e88:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+     e8a:	a2 17       	cp	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+     e8c:	b3 07       	cpc	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+     e8e:	e4 07       	cpc	r30, r20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+     e90:	f5 07       	cpc	r31, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+     e92:	20 f0       	brcs	.+8      	; 0xe9c <__udivmodsi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+     e94:	a2 1b       	sub	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+     e96:	b3 0b       	sbc	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+     e98:	e4 0b       	sbc	r30, r20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+     e9a:	f5 0b       	sbc	r31, r21
+
+00000e9c <__udivmodsi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+     e9c:	66 1f       	adc	r22, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+     e9e:	77 1f       	adc	r23, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+     ea0:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+     ea2:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+     ea4:	1a 94       	dec	r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+     ea6:	69 f7       	brne	.-38     	; 0xe82 <__udivmodsi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+     ea8:	60 95       	com	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+     eaa:	70 95       	com	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+     eac:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+     eae:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+     eb0:	9b 01       	movw	r18, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+     eb2:	ac 01       	movw	r20, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+     eb4:	bd 01       	movw	r22, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+     eb6:	cf 01       	movw	r24, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+     eb8:	08 95       	ret
+
+00000eba <__tablejump2__>:
+__tablejump2__():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2296
+     eba:	ee 0f       	add	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2297
+     ebc:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2328
+     ebe:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2329
+     ec0:	f4 91       	lpm	r31, Z
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2330
+     ec2:	e0 2d       	mov	r30, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2331
+     ec4:	09 94       	ijmp
+
+00000ec6 <malloc>:
+malloc():
+     ec6:	0f 93       	push	r16
+     ec8:	1f 93       	push	r17
+     eca:	cf 93       	push	r28
+     ecc:	df 93       	push	r29
+     ece:	82 30       	cpi	r24, 0x02	; 2
+     ed0:	91 05       	cpc	r25, r1
+     ed2:	10 f4       	brcc	.+4      	; 0xed8 <malloc+0x12>
+     ed4:	82 e0       	ldi	r24, 0x02	; 2
+     ed6:	90 e0       	ldi	r25, 0x00	; 0
+     ed8:	e0 91 10 01 	lds	r30, 0x0110	; 0x800110 <__flp>
+     edc:	f0 91 11 01 	lds	r31, 0x0111	; 0x800111 <__flp+0x1>
+     ee0:	30 e0       	ldi	r19, 0x00	; 0
+     ee2:	20 e0       	ldi	r18, 0x00	; 0
+     ee4:	b0 e0       	ldi	r27, 0x00	; 0
+     ee6:	a0 e0       	ldi	r26, 0x00	; 0
+     ee8:	30 97       	sbiw	r30, 0x00	; 0
+     eea:	99 f4       	brne	.+38     	; 0xf12 <malloc+0x4c>
+     eec:	21 15       	cp	r18, r1
+     eee:	31 05       	cpc	r19, r1
+     ef0:	09 f4       	brne	.+2      	; 0xef4 <malloc+0x2e>
+     ef2:	4a c0       	rjmp	.+148    	; 0xf88 <malloc+0xc2>
+     ef4:	28 1b       	sub	r18, r24
+     ef6:	39 0b       	sbc	r19, r25
+     ef8:	24 30       	cpi	r18, 0x04	; 4
+     efa:	31 05       	cpc	r19, r1
+     efc:	d8 f5       	brcc	.+118    	; 0xf74 <malloc+0xae>
+     efe:	8a 81       	ldd	r24, Y+2	; 0x02
+     f00:	9b 81       	ldd	r25, Y+3	; 0x03
+     f02:	61 15       	cp	r22, r1
+     f04:	71 05       	cpc	r23, r1
+     f06:	89 f1       	breq	.+98     	; 0xf6a <malloc+0xa4>
+     f08:	fb 01       	movw	r30, r22
+     f0a:	93 83       	std	Z+3, r25	; 0x03
+     f0c:	82 83       	std	Z+2, r24	; 0x02
+     f0e:	fe 01       	movw	r30, r28
+     f10:	11 c0       	rjmp	.+34     	; 0xf34 <malloc+0x6e>
+     f12:	40 81       	ld	r20, Z
+     f14:	51 81       	ldd	r21, Z+1	; 0x01
+     f16:	02 81       	ldd	r16, Z+2	; 0x02
+     f18:	13 81       	ldd	r17, Z+3	; 0x03
+     f1a:	48 17       	cp	r20, r24
+     f1c:	59 07       	cpc	r21, r25
+     f1e:	e0 f0       	brcs	.+56     	; 0xf58 <malloc+0x92>
+     f20:	48 17       	cp	r20, r24
+     f22:	59 07       	cpc	r21, r25
+     f24:	99 f4       	brne	.+38     	; 0xf4c <malloc+0x86>
+     f26:	10 97       	sbiw	r26, 0x00	; 0
+     f28:	61 f0       	breq	.+24     	; 0xf42 <malloc+0x7c>
+     f2a:	12 96       	adiw	r26, 0x02	; 2
+     f2c:	0c 93       	st	X, r16
+     f2e:	12 97       	sbiw	r26, 0x02	; 2
+     f30:	13 96       	adiw	r26, 0x03	; 3
+     f32:	1c 93       	st	X, r17
+     f34:	32 96       	adiw	r30, 0x02	; 2
+     f36:	cf 01       	movw	r24, r30
+     f38:	df 91       	pop	r29
+     f3a:	cf 91       	pop	r28
+     f3c:	1f 91       	pop	r17
+     f3e:	0f 91       	pop	r16
+     f40:	08 95       	ret
+     f42:	00 93 10 01 	sts	0x0110, r16	; 0x800110 <__flp>
+     f46:	10 93 11 01 	sts	0x0111, r17	; 0x800111 <__flp+0x1>
+     f4a:	f4 cf       	rjmp	.-24     	; 0xf34 <malloc+0x6e>
+     f4c:	21 15       	cp	r18, r1
+     f4e:	31 05       	cpc	r19, r1
+     f50:	51 f0       	breq	.+20     	; 0xf66 <malloc+0xa0>
+     f52:	42 17       	cp	r20, r18
+     f54:	53 07       	cpc	r21, r19
+     f56:	38 f0       	brcs	.+14     	; 0xf66 <malloc+0xa0>
+     f58:	a9 01       	movw	r20, r18
+     f5a:	db 01       	movw	r26, r22
+     f5c:	9a 01       	movw	r18, r20
+     f5e:	bd 01       	movw	r22, r26
+     f60:	df 01       	movw	r26, r30
+     f62:	f8 01       	movw	r30, r16
+     f64:	c1 cf       	rjmp	.-126    	; 0xee8 <malloc+0x22>
+     f66:	ef 01       	movw	r28, r30
+     f68:	f9 cf       	rjmp	.-14     	; 0xf5c <malloc+0x96>
+     f6a:	90 93 11 01 	sts	0x0111, r25	; 0x800111 <__flp+0x1>
+     f6e:	80 93 10 01 	sts	0x0110, r24	; 0x800110 <__flp>
+     f72:	cd cf       	rjmp	.-102    	; 0xf0e <malloc+0x48>
+     f74:	fe 01       	movw	r30, r28
+     f76:	e2 0f       	add	r30, r18
+     f78:	f3 1f       	adc	r31, r19
+     f7a:	81 93       	st	Z+, r24
+     f7c:	91 93       	st	Z+, r25
+     f7e:	22 50       	subi	r18, 0x02	; 2
+     f80:	31 09       	sbc	r19, r1
+     f82:	39 83       	std	Y+1, r19	; 0x01
+     f84:	28 83       	st	Y, r18
+     f86:	d7 cf       	rjmp	.-82     	; 0xf36 <malloc+0x70>
+     f88:	20 91 0e 01 	lds	r18, 0x010E	; 0x80010e <__brkval>
+     f8c:	30 91 0f 01 	lds	r19, 0x010F	; 0x80010f <__brkval+0x1>
+     f90:	23 2b       	or	r18, r19
+     f92:	41 f4       	brne	.+16     	; 0xfa4 <malloc+0xde>
+     f94:	20 91 63 00 	lds	r18, 0x0063	; 0x800063 <__malloc_heap_start>
+     f98:	30 91 64 00 	lds	r19, 0x0064	; 0x800064 <__malloc_heap_start+0x1>
+     f9c:	30 93 0f 01 	sts	0x010F, r19	; 0x80010f <__brkval+0x1>
+     fa0:	20 93 0e 01 	sts	0x010E, r18	; 0x80010e <__brkval>
+     fa4:	20 91 61 00 	lds	r18, 0x0061	; 0x800061 <__malloc_heap_end>
+     fa8:	30 91 62 00 	lds	r19, 0x0062	; 0x800062 <__malloc_heap_end+0x1>
+     fac:	21 15       	cp	r18, r1
+     fae:	31 05       	cpc	r19, r1
+     fb0:	41 f4       	brne	.+16     	; 0xfc2 <malloc+0xfc>
+     fb2:	2d b7       	in	r18, 0x3d	; 61
+     fb4:	3e b7       	in	r19, 0x3e	; 62
+     fb6:	40 91 65 00 	lds	r20, 0x0065	; 0x800065 <__malloc_margin>
+     fba:	50 91 66 00 	lds	r21, 0x0066	; 0x800066 <__malloc_margin+0x1>
+     fbe:	24 1b       	sub	r18, r20
+     fc0:	35 0b       	sbc	r19, r21
+     fc2:	e0 91 0e 01 	lds	r30, 0x010E	; 0x80010e <__brkval>
+     fc6:	f0 91 0f 01 	lds	r31, 0x010F	; 0x80010f <__brkval+0x1>
+     fca:	e2 17       	cp	r30, r18
+     fcc:	f3 07       	cpc	r31, r19
+     fce:	a0 f4       	brcc	.+40     	; 0xff8 <malloc+0x132>
+     fd0:	2e 1b       	sub	r18, r30
+     fd2:	3f 0b       	sbc	r19, r31
+     fd4:	28 17       	cp	r18, r24
+     fd6:	39 07       	cpc	r19, r25
+     fd8:	78 f0       	brcs	.+30     	; 0xff8 <malloc+0x132>
+     fda:	ac 01       	movw	r20, r24
+     fdc:	4e 5f       	subi	r20, 0xFE	; 254
+     fde:	5f 4f       	sbci	r21, 0xFF	; 255
+     fe0:	24 17       	cp	r18, r20
+     fe2:	35 07       	cpc	r19, r21
+     fe4:	48 f0       	brcs	.+18     	; 0xff8 <malloc+0x132>
+     fe6:	4e 0f       	add	r20, r30
+     fe8:	5f 1f       	adc	r21, r31
+     fea:	50 93 0f 01 	sts	0x010F, r21	; 0x80010f <__brkval+0x1>
+     fee:	40 93 0e 01 	sts	0x010E, r20	; 0x80010e <__brkval>
+     ff2:	81 93       	st	Z+, r24
+     ff4:	91 93       	st	Z+, r25
+     ff6:	9f cf       	rjmp	.-194    	; 0xf36 <malloc+0x70>
+     ff8:	f0 e0       	ldi	r31, 0x00	; 0
+     ffa:	e0 e0       	ldi	r30, 0x00	; 0
+     ffc:	9c cf       	rjmp	.-200    	; 0xf36 <malloc+0x70>
+
+00000ffe <free>:
+free():
+     ffe:	cf 93       	push	r28
+    1000:	df 93       	push	r29
+    1002:	00 97       	sbiw	r24, 0x00	; 0
+    1004:	e9 f0       	breq	.+58     	; 0x1040 <free+0x42>
+    1006:	fc 01       	movw	r30, r24
+    1008:	32 97       	sbiw	r30, 0x02	; 2
+    100a:	13 82       	std	Z+3, r1	; 0x03
+    100c:	12 82       	std	Z+2, r1	; 0x02
+    100e:	a0 91 10 01 	lds	r26, 0x0110	; 0x800110 <__flp>
+    1012:	b0 91 11 01 	lds	r27, 0x0111	; 0x800111 <__flp+0x1>
+    1016:	ed 01       	movw	r28, r26
+    1018:	30 e0       	ldi	r19, 0x00	; 0
+    101a:	20 e0       	ldi	r18, 0x00	; 0
+    101c:	10 97       	sbiw	r26, 0x00	; 0
+    101e:	a1 f4       	brne	.+40     	; 0x1048 <free+0x4a>
+    1020:	20 81       	ld	r18, Z
+    1022:	31 81       	ldd	r19, Z+1	; 0x01
+    1024:	82 0f       	add	r24, r18
+    1026:	93 1f       	adc	r25, r19
+    1028:	20 91 0e 01 	lds	r18, 0x010E	; 0x80010e <__brkval>
+    102c:	30 91 0f 01 	lds	r19, 0x010F	; 0x80010f <__brkval+0x1>
+    1030:	28 17       	cp	r18, r24
+    1032:	39 07       	cpc	r19, r25
+    1034:	09 f0       	breq	.+2      	; 0x1038 <free+0x3a>
+    1036:	61 c0       	rjmp	.+194    	; 0x10fa <free+0xfc>
+    1038:	f0 93 0f 01 	sts	0x010F, r31	; 0x80010f <__brkval+0x1>
+    103c:	e0 93 0e 01 	sts	0x010E, r30	; 0x80010e <__brkval>
+    1040:	df 91       	pop	r29
+    1042:	cf 91       	pop	r28
+    1044:	08 95       	ret
+    1046:	ea 01       	movw	r28, r20
+    1048:	ce 17       	cp	r28, r30
+    104a:	df 07       	cpc	r29, r31
+    104c:	e8 f5       	brcc	.+122    	; 0x10c8 <free+0xca>
+    104e:	4a 81       	ldd	r20, Y+2	; 0x02
+    1050:	5b 81       	ldd	r21, Y+3	; 0x03
+    1052:	9e 01       	movw	r18, r28
+    1054:	41 15       	cp	r20, r1
+    1056:	51 05       	cpc	r21, r1
+    1058:	b1 f7       	brne	.-20     	; 0x1046 <free+0x48>
+    105a:	e9 01       	movw	r28, r18
+    105c:	fb 83       	std	Y+3, r31	; 0x03
+    105e:	ea 83       	std	Y+2, r30	; 0x02
+    1060:	49 91       	ld	r20, Y+
+    1062:	59 91       	ld	r21, Y+
+    1064:	c4 0f       	add	r28, r20
+    1066:	d5 1f       	adc	r29, r21
+    1068:	ec 17       	cp	r30, r28
+    106a:	fd 07       	cpc	r31, r29
+    106c:	61 f4       	brne	.+24     	; 0x1086 <free+0x88>
+    106e:	80 81       	ld	r24, Z
+    1070:	91 81       	ldd	r25, Z+1	; 0x01
+    1072:	02 96       	adiw	r24, 0x02	; 2
+    1074:	84 0f       	add	r24, r20
+    1076:	95 1f       	adc	r25, r21
+    1078:	e9 01       	movw	r28, r18
+    107a:	99 83       	std	Y+1, r25	; 0x01
+    107c:	88 83       	st	Y, r24
+    107e:	82 81       	ldd	r24, Z+2	; 0x02
+    1080:	93 81       	ldd	r25, Z+3	; 0x03
+    1082:	9b 83       	std	Y+3, r25	; 0x03
+    1084:	8a 83       	std	Y+2, r24	; 0x02
+    1086:	f0 e0       	ldi	r31, 0x00	; 0
+    1088:	e0 e0       	ldi	r30, 0x00	; 0
+    108a:	12 96       	adiw	r26, 0x02	; 2
+    108c:	8d 91       	ld	r24, X+
+    108e:	9c 91       	ld	r25, X
+    1090:	13 97       	sbiw	r26, 0x03	; 3
+    1092:	00 97       	sbiw	r24, 0x00	; 0
+    1094:	b9 f5       	brne	.+110    	; 0x1104 <free+0x106>
+    1096:	2d 91       	ld	r18, X+
+    1098:	3c 91       	ld	r19, X
+    109a:	11 97       	sbiw	r26, 0x01	; 1
+    109c:	cd 01       	movw	r24, r26
+    109e:	02 96       	adiw	r24, 0x02	; 2
+    10a0:	82 0f       	add	r24, r18
+    10a2:	93 1f       	adc	r25, r19
+    10a4:	20 91 0e 01 	lds	r18, 0x010E	; 0x80010e <__brkval>
+    10a8:	30 91 0f 01 	lds	r19, 0x010F	; 0x80010f <__brkval+0x1>
+    10ac:	28 17       	cp	r18, r24
+    10ae:	39 07       	cpc	r19, r25
+    10b0:	39 f6       	brne	.-114    	; 0x1040 <free+0x42>
+    10b2:	30 97       	sbiw	r30, 0x00	; 0
+    10b4:	51 f5       	brne	.+84     	; 0x110a <free+0x10c>
+    10b6:	10 92 11 01 	sts	0x0111, r1	; 0x800111 <__flp+0x1>
+    10ba:	10 92 10 01 	sts	0x0110, r1	; 0x800110 <__flp>
+    10be:	b0 93 0f 01 	sts	0x010F, r27	; 0x80010f <__brkval+0x1>
+    10c2:	a0 93 0e 01 	sts	0x010E, r26	; 0x80010e <__brkval>
+    10c6:	bc cf       	rjmp	.-136    	; 0x1040 <free+0x42>
+    10c8:	d3 83       	std	Z+3, r29	; 0x03
+    10ca:	c2 83       	std	Z+2, r28	; 0x02
+    10cc:	40 81       	ld	r20, Z
+    10ce:	51 81       	ldd	r21, Z+1	; 0x01
+    10d0:	84 0f       	add	r24, r20
+    10d2:	95 1f       	adc	r25, r21
+    10d4:	c8 17       	cp	r28, r24
+    10d6:	d9 07       	cpc	r29, r25
+    10d8:	61 f4       	brne	.+24     	; 0x10f2 <free+0xf4>
+    10da:	4e 5f       	subi	r20, 0xFE	; 254
+    10dc:	5f 4f       	sbci	r21, 0xFF	; 255
+    10de:	88 81       	ld	r24, Y
+    10e0:	99 81       	ldd	r25, Y+1	; 0x01
+    10e2:	48 0f       	add	r20, r24
+    10e4:	59 1f       	adc	r21, r25
+    10e6:	51 83       	std	Z+1, r21	; 0x01
+    10e8:	40 83       	st	Z, r20
+    10ea:	8a 81       	ldd	r24, Y+2	; 0x02
+    10ec:	9b 81       	ldd	r25, Y+3	; 0x03
+    10ee:	93 83       	std	Z+3, r25	; 0x03
+    10f0:	82 83       	std	Z+2, r24	; 0x02
+    10f2:	21 15       	cp	r18, r1
+    10f4:	31 05       	cpc	r19, r1
+    10f6:	09 f0       	breq	.+2      	; 0x10fa <free+0xfc>
+    10f8:	b0 cf       	rjmp	.-160    	; 0x105a <free+0x5c>
+    10fa:	f0 93 11 01 	sts	0x0111, r31	; 0x800111 <__flp+0x1>
+    10fe:	e0 93 10 01 	sts	0x0110, r30	; 0x800110 <__flp>
+    1102:	9e cf       	rjmp	.-196    	; 0x1040 <free+0x42>
+    1104:	fd 01       	movw	r30, r26
+    1106:	dc 01       	movw	r26, r24
+    1108:	c0 cf       	rjmp	.-128    	; 0x108a <free+0x8c>
+    110a:	13 82       	std	Z+3, r1	; 0x03
+    110c:	12 82       	std	Z+2, r1	; 0x02
+    110e:	d7 cf       	rjmp	.-82     	; 0x10be <free+0xc0>
+
+00001110 <memset>:
+memset():
+    1110:	dc 01       	movw	r26, r24
+    1112:	01 c0       	rjmp	.+2      	; 0x1116 <memset+0x6>
+    1114:	6d 93       	st	X+, r22
+    1116:	41 50       	subi	r20, 0x01	; 1
+    1118:	50 40       	sbci	r21, 0x00	; 0
+    111a:	e0 f7       	brcc	.-8      	; 0x1114 <memset+0x4>
+    111c:	08 95       	ret
+
+0000111e <__do_global_dtors>:
+__do_global_dtors():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2496
+    111e:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2497
+    1120:	c2 e2       	ldi	r28, 0x22	; 34
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2498
+    1122:	d0 e0       	ldi	r29, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2502
+    1124:	03 c0       	rjmp	.+6      	; 0x112c <__do_global_dtors+0xe>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2508
+    1126:	fe 01       	movw	r30, r28
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2509
+    1128:	c8 de       	rcall	.-624    	; 0xeba <__tablejump2__>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2510
+    112a:	21 96       	adiw	r28, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2515
+    112c:	c3 32       	cpi	r28, 0x23	; 35
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2516
+    112e:	d1 07       	cpc	r29, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2521
+    1130:	d1 f7       	brne	.-12     	; 0x1126 <__do_global_dtors+0x8>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+    1132:	f8 94       	cli
+
+00001134 <__stop_program>:
+__stop_program():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr25/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+    1134:	ff cf       	rjmp	.-2      	; 0x1134 <__stop_program>

@@ -65,7 +65,7 @@ Several constraints influenced the hardware design:
 - **Mechanical constraints**
   PCB shape, connector placement, and LED layout are optimized for the tail light enclosure.
 
-Schematics, PCB layouts, and manufacturing files are included in this repository.
+Schematics, PCB layouts, and manufacturing files are included in the `pcb/` directory.
 
 ---
 
@@ -145,8 +145,8 @@ Planned additions:
 ```
 zr7-taillight/
 ├── firmware/        # ATtiny85 firmware source
-├── hardware/        # Schematics and PCB design
-├── mechanical/      # 3D / CAD / laser-cut files
+├── lasercut/        # 3D / CAD / laser-cut files
+├── pcb/             # Schematics and PCB design
 ├── docs/            # Images and additional documentation
 └── README.md
 ```

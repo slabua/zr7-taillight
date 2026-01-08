@@ -63,7 +63,7 @@ Several constraints influenced the hardware design:
 - **Mechanical constraints**
   PCB shape, connector placement, and LED layout are optimized for the tail light enclosure.
 
-Schematics, PCB layouts, and manufacturing files are included in the `pcb/` directory.
+Schematics, PCB layouts, and manufacturing files are included in the `hardware/` directory.
 
 ---
 

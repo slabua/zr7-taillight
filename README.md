@@ -40,6 +40,9 @@ The goal of this project is not only to function as a tail light, but to serve a
 
 ## ✦ Hardware
 
+![Front-PCB3D](https://github.com/user-attachments/assets/9bfbc637-d27a-4d99-a697-6e80b391f516)
+![Front-PCB](https://github.com/user-attachments/assets/2be44e0a-8018-44e2-a235-7c762d1f3a8c)
+
 ### Core Components
 
 - **MCU:** ATtiny85
@@ -132,6 +135,8 @@ Planned additions:
 - PCB and assembly photos
 - Installed tail light images
 - Short animation demo videos
+
+※ Attached photographs of the assembled PCB are representative of Rev 1.0.
 
 ---
 

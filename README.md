@@ -11,19 +11,14 @@
 ## A custom motorcycle tail light based on ATtiny85
 > Hardware • Firmware • Animations • Automotive-grade considerations
 
-<p align="center">
-  <img src="docs/images/pcb-top.png" width="45%" />
-  <img src="docs/images/schematic.png" width="45%" />
-</p>
-
-> *(Images are indicative; update paths and filenames as needed.)*
+![Front](https://github.com/user-attachments/assets/b4b53afb-a872-4cca-82cc-ddf7f4c7c053)
 
 ---
 
 ## ✦ Overview
 
 The **ZR-7 Tail Light** is a custom-designed motorcycle tail light built around the **ATtiny85** microcontroller.  
-It spans the complete stack — from schematic and PCB design to low-level firmware and animation logic — with a focus on robustness, simplicity, and visual clarity.
+It spans the complete stack, from schematic and PCB design to low-level firmware and animation logic, with a focus on robustness, simplicity, and visual clarity.
 
 The goal of this project is not only to function as a tail light, but to serve as a well-engineered embedded system suitable for real automotive environments.
 
@@ -145,8 +140,7 @@ Planned additions:
 ```
 zr7-taillight/
 ├── firmware/        # ATtiny85 firmware source
-├── lasercut/        # 3D / CAD / laser-cut files
-├── pcb/             # Schematics and PCB design
+├── hardware/        # Schematics and PCB design
 ├── docs/            # Images and additional documentation
 └── README.md
 ```

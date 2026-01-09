@@ -1,17 +1,17 @@
 # ZR-7 ATtiny85 Tail Light
 
-![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![MCU](https://img.shields.io/badge/MCU-ATtiny85-blue)
 ![Platform](https://img.shields.io/badge/Platform-AVR-lightgrey)
-![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 ![Sponsor](https://img.shields.io/badge/Sponsored%20by-PCBWay-darkgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ###### tags: `SLBLabs` `SLB Labs` `ZR-7` `ZR7` `ZR750` `Kawasaki` `KawasakiZR7` `TailLight` `TailLights` `ATtiny` `ATtiny85` `Arduino` `C/C++`
 
 ## A custom motorcycle tail light based on ATtiny85
 > Hardware • Firmware • Animations • Automotive-grade considerations
 
-![Front](https://github.com/user-attachments/assets/b4b53afb-a872-4cca-82cc-ddf7f4c7c053)
+![Front](https://lh3.googleusercontent.com/pw/AP1GczPcQGxCfUZAwsfYwrjawJziC8Ts_PzSu_Ykivu9friekENxc6mTAWhSCQKqfeNy27R3Dzpx0y0I0km117YR619BW6nFuORxewza40VULuJ0Tds7sBByco_MM5tdd6fSmaa7ZrmyeIM8mrPyxQaEvrWt3w=w800)
 
 ---
 
@@ -40,8 +40,9 @@ The goal of this project is not only to function as a tail light, but to serve a
 
 ## ✦ Hardware
 
-![Front-PCB3D](https://github.com/user-attachments/assets/9bfbc637-d27a-4d99-a697-6e80b391f516)
-![Front-PCB](https://github.com/user-attachments/assets/2be44e0a-8018-44e2-a235-7c762d1f3a8c)
+![Front-PCB3D](https://lh3.googleusercontent.com/pw/AP1GczN5KGg9Ho-JnIh3h1fnWg4-O0gHjBBb7uz8jC2eObNq4i56pB39m6ivb-ZZthR80GrJmakMjOK81XY7n-SXsZHMQmZW7eI_xxhKxkVw7WxX4tRmijJMDPrFLsQhBhjRwKpwPz5tRacYwXufTO80ZyU5_A=w800)
+
+![Front-PCB](https://lh3.googleusercontent.com/pw/AP1GczMJTML8wlEuSRibU8EQbbRFBFLXe1Q2A6dYsYtwLaMZVqKy9t3xnTSOWS1deyr4vOzW1fSDwdhgVVqTpdU7R0sroFQAo0qNH-DWFzJbBUfI26OPDezkY_rc57Kn01DNvZfhME1yRvNAP9eX0JbYQlCw-w=w800)
 
 ### Core Components
 

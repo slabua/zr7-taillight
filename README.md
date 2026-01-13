@@ -91,8 +91,6 @@ Firmware source is located in the `firmware/` directory.
 
 The firmware is developed and flashed using the **Arduino IDE** with an external ISP programmer.
 
----
-
 ### Requirements
 
 - Arduino IDE
@@ -101,8 +99,6 @@ The firmware is developed and flashed using the **Arduino IDE** with an external
 - ISP programmer:
   - USBtinyISP
   - USBasp
-
----
 
 ### Arduino IDE Setup
 
@@ -114,8 +110,6 @@ The firmware is developed and flashed using the **Arduino IDE** with an external
    - **Clock:** 16.5 MHz
    - **B.O.D Level:** 4.3v
    - **Programmer:** USBtinyISP or USBasp
-
----
 
 ### Flashing
 

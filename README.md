@@ -124,12 +124,38 @@ No bootloader is used.
 
 ## ✦ Media
 
-> Visual material will be added here.
+<details>
+  <summary>PCB details</summary>
+  
+  ![](https://lh3.googleusercontent.com/pw/AP1GczPFNp3BiLHL9ANtcv_BErcwlV7I2kLZODztr1_LbhClzMRUxLuRXSd34Jgd-NtKujqgwgUcPDabAtg2bCTwV_3BlHtAgWgcPjlDMSq-4ych3D222EBIR6UqJ1nx2GgZ_SrT--N_Nd689MknwCYJ-bzP3Q=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczN5qVahsUoubwwKXgMT9H9qP-lxrKxA6Uz4MyAxFfWnwbB6uKf4fLl120Uw7yXENnp3Dctk6xQ149svxyS85tu_NEmm6j2BIO8MWcyOx0GkI0uzB_hrGXcUo5iskEThkZ99jeaDvljBX0nC_pMcvMZxrw=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczPvxRdZKBnOmEgsDN5ky-lyao_-msAf6u6RclNbvQg9x8AnMCfo1x2VxNIbYjWeFLPuZ7105XahBKOCZHtAfEKvdcYL6MlnApfmit3KFN4rWSvsrpL0IH6yKrxYCymdSctc6DtARZ3IK2OoCz8BHEpVYQ=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczMy3Hz2OSvrXkQ9lvN-TBUcajhrmlbae0IxblqDJeSU4TuXSmUXE3TUPpIXe4G37Ik_0SjB4b15h0YBt-4RB1GLwSlxWcHav3symX6_J6Ifoer78a_kHa8JH9h1KdK2B-NKq3xojhZO-Tb08yENiIMIOA=w800)
+  
+</details>
+<details>
+  <summary>PCB assembly</summary>
+  
+  ![](https://lh3.googleusercontent.com/pw/AP1GczMCgYOm2Y5SLg9HUnLRQoBCbmA2efFoKbqAtwnOPQZr6Kyj9yddCsei-p9wVmXCl1HHDYVXAjOKxx3FSDjgm6PiKM7tKDPZ2UbLgj5SqNexSVfijuhASzdvorjjTq9QUHoxx-jCM02VcALmO9q0o7gucg=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczO07dx4XhIIKnDCl8cNuho4B5vGLqp_G-40_JN3-40kjYsAsqIElL-hcyQ0otFPo597J8IlFaTIzirtVbeF0LYC2YBXQmddekyKDrNt1hnQ_hgbQN8X_lrqWkktRN1_anY2PZHUaoiEZVHHMjP1y5NCjg=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczPSSLAMXZsuSL_EH_9LSeTFOb42-j8KSHyz3KFpyatDCM9CilzB28s7zqrolDcj0CZcwBIKWkPrYFwMZpy6AsMeEiN2O4yZcqHATMquSz77iWAU-4JYXizwOwYZw8dz4eIr70fyvqRoHBP1CCd7CulPgw=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczNZv1NvUvTarLuRiCgrPUBU-0EZsz3bD7TB45ztpoSmwOWCz_43uuzK31d4ErqJUYVlErKZZllXamzBxI6egtS93WavpUtofxnkMu886Qtz34r2INvvv5jgN5EK0FxeGBBCJKyqaGI7YVXFoZfPkAsMXQ=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczNZ2JtgMGtT5p7cis8g-_FFwKE01C7NRtReflz92n299qja9ku9Mxd0oBlaGxRaFWYk3J8EWHP7K4jet1rwGvW543BKfqyJLXMx01J6yNgpLt12rBP0K6fS_JBf3XbqoMJ3z7VzcgPFTsAWxdOIIwmfUA=w800)
+  
+</details>
+<details>
+  <summary>Diffuser</summary>
 
-Planned additions:
-- PCB and assembly photos
-- Installed tail light images
-- Short animation demo videos
+  ![](https://lh3.googleusercontent.com/pw/AP1GczMwQMm-WD50Sve8gNhy9e6oSqkowAisFYjIyjmDcKhZWFWbAS1uErCnoe925YWuyHPUmjgC_dBRWgtINm40z1Sl_q24rQXYiLMypBOXibmshpchovIGzR1X-qbd0L5DKTAxNF9ZjeFhEiNT5_9c9DIhAw=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczOEwnY6p-bO1ZNT7XdJTO0avoZpeaeT0XBrAThpfyMKgIoVpiMAdrl6P5t8TZMqruWbcOD7rerbcr5cH7bDJ82kchki6_FJ4BGGvtzOC4QAmhyybcGHY1mWFi3xYYOgrdj1gbyo2hoDT4rOiPCW3LnizQ=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczPOHxZvDetpvY_gtCAiK0V8dATaXEfqqbanUAJQfk4v_0Ab3awrhQ6X_PXREAnkJtaKdNiX_U_YKvtCWMj_GN5E60ryHwlaS3q-rRqBB92vw6ez3YqMO84t_bbZwsNba89-n3XeRUwVUqYnRiNXc6Fz1w=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczPsnyKZ1bvFCTzrbHtdoDA00lYB1wi5nZs1CPvN8huBKLir0IpzlZ0zIITNP8Pl3gQ8NYsB4_JgVCXcyQy4Yd7ZO6fDhY_EDhE350kZnHz-Glxuye2ZOR7kHYGGJwMNbPdoPEGTBq9dcQljnYn9Tfy6Pw=w800)
+  ![](https://lh3.googleusercontent.com/pw/AP1GczN65gjKsop9bZl7fM-PTdDDuNb-p6kshQikXU5CC6t6ZVC79hLXIbeLh2yWoxyhopcnV0ycRGBrTcpQn_pGj8pnzjX1u6mYRRKLUZhG6LbWufw2f-CZtN22O6_stAKXbESkH4ODfjjVSiTwy2F04BXBRQ=w800)
+  
+</details>
+
+- [TODO] Installed tail light images
+- [TODO] Short animation demo videos
 
 ※ Attached photographs of the assembled PCB are representative of Rev 1.0.
 

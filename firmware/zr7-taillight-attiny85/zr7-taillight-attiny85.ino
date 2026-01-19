@@ -353,6 +353,50 @@ static inline void renderPlateTrailEx(const PlateTrailProfile& profile) {
   plateDirty = true;
 }
 
+static inline void renderSweepTrailEx(uint8_t start, uint8_t count, const PlateTrailProfile& profile) {
+//  if ((animTick % PLATE_STOP_DIV) != 0) return;
+
+  static int16_t sweepPos = 0;
+  static int8_t  sweepDir = +1;
+
+  /* direction is explicitly +1 or -1 */
+  sweepDir = (profile.dir >= 0) ? +1 : -1;
+
+//  /* fill ring subsection using existing helper */
+//  fillRings(
+//    profile.fill_r,
+//    profile.fill_g,
+//    profile.fill_b,
+//    start,
+//    start + count - 1
+//  );
+
+  /* advance position (wrap only) */
+  sweepPos += sweepDir;
+  if (sweepPos >= count) sweepPos = 0;
+  if (sweepPos < 0)      sweepPos = count - 1;
+
+  /* normal sweep with trail */
+  for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+    int16_t p = sweepPos - (sweepDir * i);
+    if (p < 0 || p >= count) break;
+
+    uint8_t v = 255 - (i * (255 / PLATE_TRAIL_LEN));
+
+    rings.setPixelColor(
+      start + p,
+      rings.Color(
+        (uint16_t)profile.r * v / 255,
+        (uint16_t)profile.g * v / 255,
+        (uint16_t)profile.b * v / 255
+      )
+    );
+  }
+
+//  plateDirty = true;
+}
+
+
 //static void renderEyeBlink(int8_t activeLevel, bool turnOn) {
 //  uint32_t colour = rings.Color(55, 0, 0);
 //
@@ -561,6 +605,8 @@ void animPlateRightTrail() { renderPlateTrailEx(PLATE_RIGHT); }
 void animPlateEmergTrail() { renderPlateTrailEx(PLATE_EMERG); }
 void animPlateEmergDoubleTrail() { renderPlateTrailEx(PLATE_EMERG_DOUBLE); }
 
+void animRingOverlayTrail() { renderSweepTrailEx(20, 16, PLATE_RIGHT); }
+
 /*
 void animPlateDoubleSweepTrail() {
   if ((animTick % PLATE_STOP_DIV) != 0)
@@ -706,10 +752,12 @@ void updateAnimation() {
 
       case MODE_IDLE:
         animRingsIdle(animTick);
+        animRingOverlayTrail();
         break;
 
       case MODE_STOP:
         animRingsStop();
+        animRingOverlayTrail();
         break;
 
       case MODE_LEFT:
@@ -723,6 +771,11 @@ void updateAnimation() {
         break;
     }
   }
+
+//  // ---- SWEEP OVERLAY (IDLE or STOP) ----
+//  if (currentMode == MODE_IDLE || currentMode == MODE_STOP) {
+//    animRingOverlayTrail();
+//  }
 
   // ---------- PLATE ----------
 //  if (ringEmergState == RING_EMERG_ACTIVE) {
@@ -840,7 +893,7 @@ void loop() {
   // DEBUG OVERRIDE
   leftActive  = false;
   rightActive = false;
-//  stopActive  = false;
+//  stopActive  = true;
   /////////////////
 
   // -------- EMERGENCY LATCH UPDATE --------

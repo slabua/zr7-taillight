@@ -45,6 +45,8 @@
 #define LOOP_DIVIDER            10
 #define RINGS_EMERG_DIV         10
 #define PLATE_STOP_DIV          10
+#define RINGS_SWEEP_DIV         2
+#define RINGS_SWEEP_TRAIL_LEN   3
 
 #define BLINK_STEP_TICKS        2     // ticks per eyelid step
 #define BLINK_INTERVAL_TICKS    500   // interval between blinks
@@ -354,7 +356,7 @@ static inline void renderPlateTrailEx(const PlateTrailProfile& profile) {
 }
 
 static inline void renderSweepTrailEx(uint8_t start, uint8_t count, const PlateTrailProfile& profile) {
-//  if ((animTick % PLATE_STOP_DIV) != 0) return;
+  if ((animTick % RINGS_SWEEP_DIV) != 0) return;
 
   static int16_t sweepPos = 0;
   static int8_t  sweepDir = +1;
@@ -362,7 +364,7 @@ static inline void renderSweepTrailEx(uint8_t start, uint8_t count, const PlateT
   /* direction is explicitly +1 or -1 */
   sweepDir = (profile.dir >= 0) ? +1 : -1;
 
-//  /* fill ring subsection using existing helper */
+  /* fill ring subsection using existing helper */
 //  fillRings(
 //    profile.fill_r,
 //    profile.fill_g,
@@ -377,11 +379,11 @@ static inline void renderSweepTrailEx(uint8_t start, uint8_t count, const PlateT
   if (sweepPos < 0)      sweepPos = count - 1;
 
   /* normal sweep with trail */
-  for (uint8_t i = 0; i < PLATE_TRAIL_LEN; i++) {
+  for (uint8_t i = 0; i < RINGS_SWEEP_TRAIL_LEN; i++) {
     int16_t p = sweepPos - (sweepDir * i);
     if (p < 0 || p >= count) break;
 
-    uint8_t v = 255 - (i * (255 / PLATE_TRAIL_LEN));
+    uint8_t v = 255 - (i * (255 / RINGS_SWEEP_TRAIL_LEN));
 
     rings.setPixelColor(
       start + p,
@@ -393,7 +395,7 @@ static inline void renderSweepTrailEx(uint8_t start, uint8_t count, const PlateT
     );
   }
 
-//  plateDirty = true;
+  ringsDirty = true;
 }
 
 
@@ -442,6 +444,9 @@ void animRingsIdle(uint16_t animTick) {
   for (uint8_t i = 0; i < RING_LEDS; i++)
     rings.setPixelColor(ringIndex(i, RING_CW), colour);
     //rings.setPixelColor(i, colour);
+//  for (uint8_t i = 0; i < 19; i++)
+//    rings.setPixelColor(ringIndex(i, RING_CW), colour);
+//    //rings.setPixelColor(i, colour);
 
   fillRings(0, 0, IDLE_MAX_BRIGHTNESS, 35, 44);
 
@@ -605,7 +610,7 @@ void animPlateRightTrail() { renderPlateTrailEx(PLATE_RIGHT); }
 void animPlateEmergTrail() { renderPlateTrailEx(PLATE_EMERG); }
 void animPlateEmergDoubleTrail() { renderPlateTrailEx(PLATE_EMERG_DOUBLE); }
 
-void animRingOverlayTrail() { renderSweepTrailEx(20, 16, PLATE_RIGHT); }
+void animRingOverlayTrail() { renderSweepTrailEx(19, 16, PLATE_RIGHT); }
 
 /*
 void animPlateDoubleSweepTrail() {
